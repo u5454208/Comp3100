@@ -478,6 +478,7 @@
     <link rel="apple-touch-icon" href="http://www.wix.com/favicon.ico" type="image/x-icon">
     <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
             data-requiremodule="//www.google-analytics.com/analytics.js" src="./sectrain_files/analytics.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 </head>
 <body class="">
 <div id="SITE_CONTAINER">
