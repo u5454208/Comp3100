@@ -15,6 +15,7 @@
 
 import java.util.ArrayList;
 import java.util.List;
+import java.lang.*;
 
 import com.amazonaws.AmazonClientException;
 import com.amazonaws.AmazonServiceException;
@@ -22,10 +23,8 @@ import com.amazonaws.auth.AWSCredentials;
 import com.amazonaws.auth.profile.ProfileCredentialsProvider;
 import com.amazonaws.regions.Region;
 import com.amazonaws.regions.Regions;
-import com.amazonaws.services.ec2.AmazonEC2;
-import com.amazonaws.services.ec2.AmazonEC2Client;
-import com.amazonaws.services.ec2.model.RunInstancesRequest;
-import com.amazonaws.services.ec2.model.RunInstancesResult;
+import com.amazonaws.services.ec2.*;
+import com.amazonaws.services.ec2.model.*;
 
 /**
  * Welcome to your new AWS Java SDK based project!
@@ -72,6 +71,7 @@ public class GettingStartedApp {
          * credential profile by reading from the credentials file located at
          * (~/.aws/credentials).
          */
+        ArrayList<String> instanceIds=new ArrayList<String>();
         AWSCredentials credentials = null;
         try {
             credentials = new ProfileCredentialsProvider().getCredentials();
@@ -97,7 +97,9 @@ public class GettingStartedApp {
                 .withKeyName("COMP3100")
                 .withSecurityGroups("default");
         RunInstancesResult run= ec2.runInstances(runn);
-
+        //get instance ID
+	    String result =run.getReservation().getInstances().get(0).getInstanceId();
+	    instanceIds.add(result);
 
     }
 
