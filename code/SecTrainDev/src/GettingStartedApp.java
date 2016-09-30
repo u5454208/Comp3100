@@ -47,7 +47,8 @@ import com.amazonaws.services.ec2.model.*;
  */
 
 public class GettingStartedApp {
-
+	ArrayList<String> instanceIds;
+	AmazonEC2 ec2;
     /*
      * Before running the code:
      *      Fill in your AWS access credentials in the provided credentials
@@ -61,7 +62,7 @@ public class GettingStartedApp {
      *      the credentials file in your source directory.
      */
 
-    public static void main(String[] args) {
+    public GettingStartedApp() {
         //============================================================================================//
         //=============================== Submitting a Request =======================================//
         //============================================================================================//
@@ -71,7 +72,6 @@ public class GettingStartedApp {
          * credential profile by reading from the credentials file located at
          * (~/.aws/credentials).
          */
-        ArrayList<String> instanceIds=new ArrayList<String>();
         AWSCredentials credentials = null;
         try {
             credentials = new ProfileCredentialsProvider().getCredentials();
@@ -82,15 +82,13 @@ public class GettingStartedApp {
                             "location (~/.aws/credentials), and is in valid format.",
                     e);
         }
-
         // Create the AmazonEC2Client object so we can call various APIs.
-        AmazonEC2 ec2 = new AmazonEC2Client(credentials);
+        this.ec2 = new AmazonEC2Client(credentials);
         Region usWest2 = Region.getRegion(Regions.US_WEST_2);
         ec2.setRegion(usWest2);
-
         // Initializes Instance Request
         RunInstancesRequest runn = new RunInstancesRequest();
-        runn.withImageId("ami-d732f0b7")
+        runn.withImageId("ami-e50ed085")
                 .withInstanceType("t2.micro")
                 .withMinCount(1)
                 .withMaxCount(1)
@@ -99,9 +97,10 @@ public class GettingStartedApp {
         RunInstancesResult run= ec2.runInstances(runn);
         //get instance ID
 	    String result =run.getReservation().getInstances().get(0).getInstanceId();
-	    instanceIds.add(result);
-
+	    this.instanceIds.add(result);
     }
-
+    public String getInstanceIds()
+    {
+    	return this.instanceIds.get(0);
+    }
 }
-
