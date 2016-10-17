@@ -9,7 +9,7 @@
 
 <button onclick="window.location.href='/pages/sign_up.jsp'">Sign up</button>
 <button onclick="window.location.href='/pages/login.jsp'">login</button>
-<button onclick="window.location.href='a.html'">Run</button>
+<button onclick="window.location.href='a.jsp'">Run</button>
 
 </body>
 </html>
