@@ -15,9 +15,6 @@
         <javac includeantruntime="false" srcdir="." destdir="." classpathref="aws.java.sdk.classpath"/>
     </target>
 
-    <target name="GettingStartedApp" depends="build">
-        <java classname="GettingStartedApp" classpathref="aws.java.sdk.classpath" fork="true"/>
-    </target>
 
 </project>
 

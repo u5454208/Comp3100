@@ -22,7 +22,7 @@ xmlhttp.setRequestHeader("Content-Type", "text/html;charset=UTF-8");
 xmlhttp.send("name="+name);
 xmlhttp.onreadystatechange=function()
   {
-      alert("Shit!");
+
 	if(xmlhttp.readyState==4 && xmlhttp.status==200)
 	{
 			alert("running!");
@@ -56,7 +56,6 @@ function Function2(){
 	xmlhttp.send("name="+name);
 	xmlhttp.onreadystatechange=function()
 	  {
-          alert("Shit!");
 		if(xmlhttp.readyState==4 && xmlhttp.status==200)
 		{
 				alert("Stop app successful!");	
