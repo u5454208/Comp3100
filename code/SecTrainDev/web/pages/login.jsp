@@ -5,19 +5,81 @@
   Time: 11:54 AM
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<!DOCTYPE html>
 <html>
-<head>
-    <title>Login Page</title>
-</head>
+<title>Login Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+    body, h1, h2, h3, h4, h5, h6 {
+        font-family: "Lato", sans-serif
+    }
+
+    .w3-navbar, h1, button {
+        font-family: "Montserrat", sans-serif
+    }
+
+    .fa-anchor, .fa-coffee {
+        font-size: 200px
+    }
+</style>
 <body>
-<h1>log in</h1>
-username:<br>
-<input type="text" name="username">
-<br>
-password:<br>
-<input type="text" name="password">
-<br><br>
-<button type="button" onclick="window.location.href='/pages/start.jsp'">Log in</button>
+
+<!-- Navbar -->
+<div class="w3-top">
+    <ul class="w3-navbar w3-indigo w3-card-2 w3-left-align w3-large">
+        <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+            <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()"
+               title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+        </li>
+        <li><a href="/../index.jsp" class="w3-padding-large w3-white">Home</a></li>
+        <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Main Features</a></li>
+        <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Benefit for your code</a></li>
+        <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">About us</a></li>
+    </ul>
+
+    <!-- Navbar on small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+        <ul class="w3-navbar w3-left-align w3-large w3-black">
+            <li><a class="w3-padding-large" href="#">Main Features</a></li>
+            <li><a class="w3-padding-large" href="#">Benefit for your code</a></li>
+            <li><a class="w3-padding-large" href="#">About us</a></li>
+        </ul>
+    </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-blue w3-center w3-padding-64">
+    <h1 class="w3-margin w3-jumbo">Log in your account</h1>
+    <h5 class="w3-padding-8">Username:<br></h5>
+    <input type="text" name="username">
+    <br>
+    <h5 class="w3-padding-8">Password:<br></h5>
+    <input type="text" name="password">
+    <br><br>
+    <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button"
+            onclick="window.location.href='/VMControl.jsp'">Login
+    </button>
+    <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button"
+            onclick="window.location.href='sign_up.jsp'">Sign up
+    </button>
+</header>
+
+<script>
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+        var x = document.getElementById("navDemo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else {
+            x.className = x.className.replace(" w3-show", "");
+        }
+    }
+</script>
+
 </body>
 </html>
+
