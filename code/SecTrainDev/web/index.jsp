@@ -29,17 +29,17 @@
                title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         </li>
         <li><a href="index.jsp" class="w3-padding-large w3-white">Home</a></li>
-        <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Main Features</a></li>
-        <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Benefit for your code</a></li>
-        <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">About us</a></li>
+        <li class="w3-hide-small"><a href="pages/main_features.jsp" class="w3-padding-large w3-hover-white">Main Features</a></li>
+        <li class="w3-hide-small"><a href="pages/benefit.jsp" class="w3-padding-large w3-hover-white">Benefit for your code</a></li>
+        <li class="w3-hide-small"><a href="pages/about_us.jsp" class="w3-padding-large w3-hover-white">About us</a></li>
     </ul>
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
         <ul class="w3-navbar w3-left-align w3-large w3-black">
-            <li><a class="w3-padding-large" href="#">Main Features</a></li>
-            <li><a class="w3-padding-large" href="#">Benefit for your code</a></li>
-            <li><a class="w3-padding-large" href="#">About us</a></li>
+            <li><a class="w3-padding-large" href="pages/main_features.jsp">Main Features</a></li>
+            <li><a class="w3-padding-large" href="pages/benefit.jsp">Benefit for your code</a></li>
+            <li><a class="w3-padding-large" href="pages/about_us.jsp">About us</a></li>
         </ul>
     </div>
 </div>
@@ -48,7 +48,7 @@
 <header class="w3-container w3-blue w3-center w3-padding-128">
     <h1 class="w3-margin w3-jumbo">Security Training as a Service</h1>
     <button class="w3-btn w3-padding-16 w3-large w3-margin-top"
-            onclick="window.location.href='/../pages/login.jsp'">Get Started</button>
+            onclick="window.location.href='pages/login.jsp'">Get Started</button>
     <button class="w3-btn w3-padding-16 w3-large w3-margin-top"
             onclick="window.location.href='VMControl.jsp'">Run</button>
 </header>

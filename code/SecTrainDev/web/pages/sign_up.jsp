@@ -30,17 +30,17 @@
                title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         </li>
         <li><a href="/../index.jsp" class="w3-padding-large w3-white">Home</a></li>
-        <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Main Features</a></li>
-        <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">Benefit for your code</a></li>
-        <li class="w3-hide-small"><a href="#" class="w3-padding-large w3-hover-white">About us</a></li>
+        <li class="w3-hide-small"><a href="main_features.jsp" class="w3-padding-large w3-hover-white">Main Features</a></li>
+        <li class="w3-hide-small"><a href="benefit.jsp" class="w3-padding-large w3-hover-white">Benefit for your code</a></li>
+        <li class="w3-hide-small"><a href="about_us.jsp" class="w3-padding-large w3-hover-white">About us</a></li>
     </ul>
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
         <ul class="w3-navbar w3-left-align w3-large w3-black">
-            <li><a class="w3-padding-large" href="#">Main Features</a></li>
-            <li><a class="w3-padding-large" href="#">Benefit for your code</a></li>
-            <li><a class="w3-padding-large" href="#">About us</a></li>
+            <li><a class="w3-padding-large" href="main_features.jsp">Main Features</a></li>
+            <li><a class="w3-padding-large" href="benefit.jsp">Benefit for your code</a></li>
+            <li><a class="w3-padding-large" href="about_us.jsp">About us</a></li>
         </ul>
     </div>
 </div>

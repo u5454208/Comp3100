@@ -1,13 +1,6 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: lrz0927
-  Date: 13/10/16
-  Time: 11:54 AM
-  To change this template use File | Settings | File Templates.
---%>
 <!DOCTYPE html>
 <html>
-<title>Login Page</title>
+<title>Security Training as a Service</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -52,21 +45,31 @@
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-blue w3-center w3-padding-64">
-    <h1 class="w3-margin w3-jumbo">Log in your account</h1>
-    <h5 class="w3-padding-8">Username:<br></h5>
-    <input type="text" name="username">
-    <br>
-    <h5 class="w3-padding-8">Password:<br></h5>
-    <input type="text" name="password">
-    <br><br>
-    <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button"
-            onclick="window.location.href='/VMControl.jsp'">Login
-    </button>
-    <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button"
-            onclick="window.location.href='sign_up.jsp'">Sign up
-    </button>
+<header class="w3-container w3-blue w3-center w3-padding-128">
+    <h1 class="w3-margin w3-jumbo">Benefit for your code</h1>
 </header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+            <h1>Benefit for your code</h1>
+            <h5 class="w3-padding-32">There are a range of online tools, capture the flag challenges, and training
+                programs designed to teach people how to perform penetration tests. What's missing is offensive security
+                training geared specifically towards developers; by learning how to identify, exploit, and resolve
+                security vulnerabilities, they will be much less likely to introduce them in the software they build.
+                This project involves building a range of language/framework-focused training packages for software
+                developers, to be delivered via a software-as-a-service model. Each training package will include slides
+                and reference material, followed by a hands on challenge to identify and exploit the kinds of
+                vulnerabilities referenced in the training. Exploits will be automatically verified and graded.
+            </h5>
+        </div>
+
+        <div class="w3-third w3-center">
+            <i class="fa fa-anchor w3-padding-64 w3-text-blue"></i>
+        </div>
+    </div>
+</div>
 
 <script>
     // Used to toggle the menu on small screens when clicking on the menu button
