@@ -21,9 +21,6 @@
         font-size: 200px
     }
 </style>
-
-<body>
-
 <script language="JavaScript">
     function Function1() {
         var xmlhttp;
@@ -40,8 +37,9 @@
         xmlhttp.setRequestHeader("Content-Type", "text/html;charset=UTF-8");
         xmlhttp.send("name=" + name);
         xmlhttp.onreadystatechange = function () {
-
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            alert(xmlhttp.readyState);
+            alert(xmlhttp.status);
+            if (xmlhttp.readyState == 4) {
                 alert("running!");
                 function stop() {
                     $(documemt).ready(function () {
@@ -66,16 +64,19 @@
         var name = document.getElementById("2").value;
         name = encodeURI(encodeURI(name));
 
-        xmlhttp.open("POST", "StartApp", true);
+        xmlhttp.open("POST", "StopApp", true);
         xmlhttp.setRequestHeader("Content-Type", "text/html;charset=UTF-8");
         xmlhttp.send("name=" + name);
         xmlhttp.onreadystatechange = function () {
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+            alert(xmlhttp.readyState);
+            if (xmlhttp.readyState == 4) {
                 alert("Stop app successful!");
             }
         }
     }
 </script>
+<body>
+
 <!-- Navbar -->
 <div class="w3-top">
     <ul class="w3-navbar w3-indigo w3-card-2 w3-left-align w3-large">
@@ -103,11 +104,15 @@
 <header class="w3-container w3-blue w3-center w3-padding-128">
     <h1 class="w3-margin w3-jumbo">Security Training as a Service</h1>
 
-    <form class="w3-btn w3-padding-16 w3-large w3-margin-top" name="form" action="">
-        <input id=1 type="button" name="action" onclick="Function1()" value="start"></input>
+    <form>
+        <button class="w3-btn w3-padding-16 w3-large w3-margin-top" id="1"
+                onclick="Function1()" value="start">Start App
+        </button>
     </form>
-    <form class="w3-btn w3-padding-16 w3-large w3-margin-top" name="form" action="">
-        <input id=2 type="button" name="action" onclick="Function2()" value="stop"></input>
+    <form>
+        <button class="w3-btn w3-padding-16 w3-large w3-margin-top" id="2"
+                onclick="Function2()" value="stop">Stop App
+        </button>
     </form>
 </header>
 

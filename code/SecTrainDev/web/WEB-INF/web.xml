@@ -10,11 +10,19 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <servlet-name>StartApp</servlet-name>  
-    <servlet-class>StartApp</servlet-class>  
+    <servlet-name>StartApp</servlet-name>
+    <servlet-class>StartApp</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>StartApp</servlet-name>
     <url-pattern>/StartApp</url-pattern>
   </servlet-mapping>
+  <servlet>
+      <servlet-name>StopApp</servlet-name>
+      <servlet-class>StopApp</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>StopApp</servlet-name>
+      <url-pattern>/StopApp</url-pattern>
+    </servlet-mapping>
 </web-app>
