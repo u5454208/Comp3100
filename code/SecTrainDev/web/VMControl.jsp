@@ -22,6 +22,7 @@
     }
 </style>
 <script language="JavaScript">
+var ID;
     function Function1() {
         var xmlhttp;
         if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -34,13 +35,14 @@
         name = encodeURI(encodeURI(name));
 
         xmlhttp.open("POST", "StartApp", true);
-        xmlhttp.setRequestHeader("Content-Type", "text/html;charset=UTF-8");
+        xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xmlhttp.send("name=" + name);
+        alert("Please wait for some time.");
         xmlhttp.onreadystatechange = function () {
-            alert(xmlhttp.readyState);
-            alert(xmlhttp.status);
-            if (xmlhttp.readyState == 4) {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 alert("running!");
+                ID=xmlhttp.getResponseHeader('ID');
+                alert(xmlhttp.getAllResponseHeaders());
                 function stop() {
                     $(documemt).ready(function () {
                                 $('#2').trigger("click");
@@ -63,14 +65,14 @@
         }
         var name = document.getElementById("2").value;
         name = encodeURI(encodeURI(name));
-
         xmlhttp.open("POST", "StopApp", true);
-        xmlhttp.setRequestHeader("Content-Type", "text/html;charset=UTF-8");
-        xmlhttp.send("name=" + name);
+        xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xmlhttp.send("name=" + ID);
         xmlhttp.onreadystatechange = function () {
-            alert(xmlhttp.readyState);
-            if (xmlhttp.readyState == 4) {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 alert("Stop app successful!");
+                alert(xmlhttp.responseText);
+                alert(xmlhttp.getAllResponseHeaders());
             }
         }
     }
@@ -106,12 +108,12 @@
 
     <form>
         <button class="w3-btn w3-padding-16 w3-large w3-margin-top" id="1"
-                onclick="Function1()" value="start">Start App
+                onclick="Function1()" value="start" type="button">Start App
         </button>
     </form>
     <form>
         <button class="w3-btn w3-padding-16 w3-large w3-margin-top" id="2"
-                onclick="Function2()" value="stop">Stop App
+                onclick="Function2()" value="stop" type="button">Stop App
         </button>
     </form>
 </header>
