@@ -48,19 +48,6 @@ public class StartApp extends HttpServlet
 			// 设置响应内容类型
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out = response.getWriter();
-			/*String title = "HTTP Header 请求实例 - 菜鸟教程实例";
-			String docType =
-					"<!DOCTYPE html> \n";
-			out.println(docType +
-					"<html>\n" +
-					"<head><meta charset=\"utf-8\"><title>" + title + "</title></head>\n"+
-					"<body bgcolor=\"#f0f0f0\">\n" +
-					"<h1 align=\"center\">" + title + "</h1>\n" +
-					"<table width=\"100%\" border=\"1\" align=\"center\">\n" +
-					"<tr bgcolor=\"#949494\">\n" +
-					"<th>Header 名称</th><th>Header 值</th>\n"+
-					"</tr>\n");
-			*/
 			String name = request.getParameter("name");
 			if(true)
 			{
@@ -79,12 +66,10 @@ public class StartApp extends HttpServlet
 			        this.ec2 = new AmazonEC2Client(credentials);
 			        Region usWest2 = Region.getRegion(Regions.US_WEST_2);
 			        ec2.setRegion(usWest2);
-				    //TerminateInstancesRequest TIR=new TerminateInstancesRequest(this.instanceIds);
-				    //this.ec2.terminateInstances(TIR);
 			        // Initializes Instance Request
 			        RunInstancesRequest runn = new RunInstancesRequest();
-			        runn.withImageId("ami-e50ed085")
-			                .withInstanceType("t1.micro")
+			        runn.withImageId("ami-9364c2f3")
+			                .withInstanceType("t2.micro")
 			                .withMinCount(1)
 			                .withMaxCount(1)
 			                .withKeyName("COMP3100")
@@ -92,27 +77,22 @@ public class StartApp extends HttpServlet
 			        RunInstancesResult run= ec2.runInstances(runn);
 				    String result =run.getReservation().getInstances().get(0).getInstanceId();
 				    this.instanceIds.add(result);
-					//PersistDataJSON persistDataJSON = new PersistDataJSON(instanceIds);
-					//persistDataJSON.save("ID");
 					data data0=new data();
 					data0.setInstanceIds(this.instanceIds);
 					data0.setPublicDNS(run.getReservation().getInstances().get(0).getInstanceId());
-					//Persistence persist = new Persistence(instanceIds);
-					//out.print("<tr><td>" + this.instanceIds.get(0) + "</td>\n");
-					//out.print("<tr><td>" + this.instanceIds.get(1) + "</td>\n");
-				    //String DNS = run.getReservation().getInstances().get(0).getPublicDnsName();
-				    //out.print("<script>window.open(DNS+'webbank/index.jsp')</script>");
+					response.getWriter().print(result);
+					response.addHeader("ID", result);
+					if(run.getReservation().getInstances().get(0).getState().getCode()!=16)
+					{
+						try {
+							Thread.sleep(10000);
+						} catch (InterruptedException e) {
+							// TODO Auto-generated catch block
+							e.printStackTrace();
+						}
+					}
+					response.addHeader("publicDNS", run.getReservation().getInstances().get(0).getPublicDnsName());
 		    }
-			/*Enumeration headerNames = request.getHeaderNames();
-
-			while(headerNames.hasMoreElements()) {
-				String paramName = (String)headerNames.nextElement();
-				out.print("<tr><td>" + paramName + "</td>\n");
-				String paramValue = request.getHeader(paramName);
-				out.println("<td> " + paramValue + "</td></tr>\n");
-			}
-
-			out.println("</table>\n"+name+"\n</body></html>");*/
 		}
 		// 处理 POST 方法请求的方法
 		public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
