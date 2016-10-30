@@ -43,7 +43,7 @@ public class StopApp extends HttpServlet {
         doGet(request, response);
     }
 
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+   protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         AWSCredentials credentials = null;
         try {
             credentials = new ProfileCredentialsProvider().getCredentials();
@@ -58,8 +58,8 @@ public class StopApp extends HttpServlet {
         this.ec2 = new AmazonEC2Client(credentials);
          Region usWest2 = Region.getRegion(Regions.US_WEST_2);
         this.ec2.setRegion(usWest2);
-        PersistDataJSON persistDataJSON = new PersistDataJSON();
-        data a;
+        String name = request.getParameter("name");
+        this.instanceIds.add(name);
         //this.instanceIds=a.getInstanceIds();
         TerminateInstancesRequest TIR = new TerminateInstancesRequest(this.instanceIds);
         this.ec2.terminateInstances(TIR);
