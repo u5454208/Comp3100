@@ -59,7 +59,25 @@ public class StopApp extends HttpServlet {
          Region usWest2 = Region.getRegion(Regions.US_WEST_2);
         this.ec2.setRegion(usWest2);
         String name = request.getParameter("name");
-        this.instanceIds.add(name);
+        int i=0,count=0;
+        for(i=0;i<name.length();i++)
+        {
+            if(name.charAt(i)=='-')
+            {
+               count++;
+            }
+        }
+        if(count==1)
+        {
+        	   this.instanceIds.add(name);
+        }
+        else
+        {
+            for(i=0;i<count;i++)
+            {
+        		     this.instanceIds.add(name.split(",")[i]);
+            }
+        }
         //this.instanceIds=a.getInstanceIds();
         TerminateInstancesRequest TIR = new TerminateInstancesRequest(this.instanceIds);
         this.ec2.terminateInstances(TIR);
