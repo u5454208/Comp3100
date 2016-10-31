@@ -42,16 +42,16 @@ var ID=new Array();
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 alert("running!");
                 ID.push(xmlhttp.getResponseHeader('ID'));
-                alert(xmlhttp.getAllResponseHeaders());
+                //alert(xmlhttp.getAllResponseHeaders());
                 function stop() {
-                    $(documemt).ready(function () {
+                    $().ready(function () {
                                 $('#2').trigger("click");
                             }
                     );
                     alert("Timeout!");
                 }
 
-                setTimeout("stop()", 600000);
+                setTimeout("stop()", 60000);
             }
         }
     }
