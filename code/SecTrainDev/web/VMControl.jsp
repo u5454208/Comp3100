@@ -22,7 +22,7 @@
     }
 </style>
 <script language="JavaScript">
-var ID;
+var ID=new Array();
     function Function1() {
         var xmlhttp;
         if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
@@ -41,7 +41,7 @@ var ID;
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 alert("running!");
-                ID=xmlhttp.getResponseHeader('ID');
+                ID.push(xmlhttp.getResponseHeader('ID'));
                 alert(xmlhttp.getAllResponseHeaders());
                 function stop() {
                     $(documemt).ready(function () {
@@ -63,16 +63,12 @@ var ID;
         else {// code for IE6, IE5
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
-        var name = document.getElementById("2").value;
-        name = encodeURI(encodeURI(name));
         xmlhttp.open("POST", "StopApp", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xmlhttp.send("name=" + ID);
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 alert("Stop app successful!");
-                alert(xmlhttp.responseText);
-                alert(xmlhttp.getAllResponseHeaders());
             }
         }
     }
