@@ -15,7 +15,7 @@
         font-family: "Montserrat", sans-serif
     }
 
-    .fa-anchor, .fa-coffee {
+    .fa-anchor {
         font-size: 200px
     }
 </style>
