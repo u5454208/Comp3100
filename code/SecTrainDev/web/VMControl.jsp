@@ -72,6 +72,34 @@ var ID=new Array();
             }
         }
     }
+    function grade() {
+        var name = document.getElementById("3").value;
+        name = encodeURI(encodeURI(name));
+        if(name=="D3Mo_t0K3N!")
+        	{
+        	    alert("You get 5 marks");
+        	}
+        else if(name=="Dem0_Tok3U2")
+        	{
+        	    alert("You get 10 marks");
+        	}
+        else if(name=="dEmO_TOkEn3")
+        	{
+        	    alert("You get 15 marks");
+        	}
+        else if(name=="DEM0_T0KeN4")
+        	{
+        	    alert("You get 20 marks");
+        	}
+        else if(name=="deM0_t0k3u5")
+        	{
+        	    alert("Congratulations! You get 30 marks");
+        	}
+        else
+        	{
+        	    alert("Incorrect!");
+        	}
+    }
 </script>
 <body>
 
@@ -105,6 +133,12 @@ var ID=new Array();
     <form>
         <button class="w3-btn w3-padding-16 w3-large w3-margin-top" id="1"
                 onclick="Function1()" value="start" type="button">Start App
+        </button>
+    </form>
+    <form>
+                     <p>Token: <input type="text" name="Token" id="3"/></p>
+        <button class="w3-btn w3-padding-16 w3-large w3-margin-top"
+                onclick="grade()" value="grade" type="button">grading
         </button>
     </form>
     <form>
