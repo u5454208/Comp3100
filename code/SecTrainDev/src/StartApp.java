@@ -77,21 +77,21 @@ public class StartApp extends HttpServlet
 			        RunInstancesResult run= ec2.runInstances(runn);
 				    String result =run.getReservation().getInstances().get(0).getInstanceId();
 				    this.instanceIds.add(result);
-					data data0=new data();
-					data0.setInstanceIds(this.instanceIds);
-					data0.setPublicDNS(run.getReservation().getInstances().get(0).getInstanceId());
+					//data data0=new data();
+					//data0.setInstanceIds(this.instanceIds);
+					//data0.setPublicDNS(run.getReservation().getInstances().get(0).getInstanceId());
 					response.getWriter().print(result);
 					response.addHeader("ID", result);
-					if(run.getReservation().getInstances().get(0).getState().getCode()!=16)
-					{
-						try {
+					try {
 							Thread.sleep(10000);
 						} catch (InterruptedException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
 						}
-					}
-					response.addHeader("publicDNS", run.getReservation().getInstances().get(0).getPublicDnsName());
+					DescribeInstancesRequest des=new DescribeInstancesRequest();
+					des.withInstanceIds(result);
+					DescribeInstancesResult dess=ec2.describeInstances(des);
+					response.addHeader("publicDNS", dess.getReservations().get(0).getInstances().get(0).getPublicDnsName());
 		    }
 		}
 		// 处理 POST 方法请求的方法
