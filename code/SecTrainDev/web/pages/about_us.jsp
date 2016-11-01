@@ -54,14 +54,14 @@
     <div class="w3-content">
         <div class="w3-twothird">
             <h1>About us</h1>
-            <h5 class="w3-padding-32">There are a range of online tools, capture the flag challenges, and training
-                programs designed to teach people how to perform penetration tests. What's missing is offensive security
-                training geared specifically towards developers; by learning how to identify, exploit, and resolve
-                security vulnerabilities, they will be much less likely to introduce them in the software they build.
-                This project involves building a range of language/framework-focused training packages for software
-                developers, to be delivered via a software-as-a-service model. Each training package will include slides
-                and reference material, followed by a hands on challenge to identify and exploit the kinds of
-                vulnerabilities referenced in the training. Exploits will be automatically verified and graded.
+            <h5 class="w3-padding-32">
+                Team member: <br>
+                            Yu Xia<br>
+                            Lin Zhou<br>
+                            Zongge Ren<br>
+                            Runze Liu<br>
+                            David Jorm (Client)<br>
+                Email: comp3100project@hotmail.com
             </h5>
         </div>
 

@@ -61,7 +61,7 @@
     <input type="text" name="password">
     <br><br>
     <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button"
-            onclick="window.location.href='/VMControl.jsp'">Login
+            onclick="window.location.href='/home.jsp'">Login
     </button>
     <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button"
             onclick="window.location.href='sign_up.jsp'">Sign up

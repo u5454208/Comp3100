@@ -32,6 +32,7 @@
         <li class="w3-hide-small"><a href="pages/main_features.jsp" class="w3-padding-large w3-hover-white">Main Features</a></li>
         <li class="w3-hide-small"><a href="pages/benefit.jsp" class="w3-padding-large w3-hover-white">Benefit for your code</a></li>
         <li class="w3-hide-small"><a href="pages/about_us.jsp" class="w3-padding-large w3-hover-white">About us</a></li>
+        <li class="w3-hide-small w3-right"><a href="pages/login.jsp" class="w3-padding-large w3-hover-white">Login</a></li>
     </ul>
 
     <!-- Navbar on small screens -->
@@ -40,6 +41,7 @@
             <li><a class="w3-padding-large" href="pages/main_features.jsp">Main Features</a></li>
             <li><a class="w3-padding-large" href="pages/benefit.jsp">Benefit for your code</a></li>
             <li><a class="w3-padding-large" href="pages/about_us.jsp">About us</a></li>
+            <li><a class="w3-padding-large w3-right" href="pages/login.jsp">Login</a></li>
         </ul>
     </div>
 </div>
@@ -49,8 +51,6 @@
     <h1 class="w3-margin w3-jumbo">Security Training as a Service</h1>
     <button class="w3-btn w3-padding-16 w3-large w3-margin-top"
             onclick="window.location.href='pages/login.jsp'">Get Started</button>
-    <button class="w3-btn w3-padding-16 w3-large w3-margin-top"
-            onclick="window.location.href='VMControl.jsp'">Run</button>
 </header>
 
 <!-- First Grid -->

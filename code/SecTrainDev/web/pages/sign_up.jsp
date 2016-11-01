@@ -58,7 +58,7 @@
     <input type="text" name="confirm password">
     <br><br>
     <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button"
-            onclick="window.location.href='/VMControl.jsp'">Sign up
+            onclick="window.location.href='/home.jsp'">Sign up
     </button>
 </header>
 
