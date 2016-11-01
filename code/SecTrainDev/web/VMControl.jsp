@@ -43,15 +43,20 @@ var ID=new Array();
                 alert("running!");
                 ID.push(xmlhttp.getResponseHeader('ID'));
                 //alert(xmlhttp.getAllResponseHeaders());
+                alert("waiting for tomcat");
+                function open()
+                {
+                	    window.open('http://'+xmlhttp.getResponseHeader('publicDNS')+':8080/webbank');
+                	}
+                setTimeout(open, 60000); 
                 function stop() {
-                    $().ready(function () {
+                	$().ready(function () {
                                 $('#2').trigger("click");
                             }
                     );
                     alert("Timeout!");
                 }
-
-                setTimeout("stop()", 60000);
+                setTimeout(stop, 120000);
             }
         }
     }
@@ -63,12 +68,19 @@ var ID=new Array();
         else {// code for IE6, IE5
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
+        var name = document.getElementById("2").value;
+        name = encodeURI(encodeURI(name));
         xmlhttp.open("POST", "StopApp", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xmlhttp.send("name=" + ID);
+       // alert(ID);
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 alert("Stop app successful!");
+                while(ID.length!=0)
+                	{
+                	   ID.pop();
+                	}
             }
         }
     }
