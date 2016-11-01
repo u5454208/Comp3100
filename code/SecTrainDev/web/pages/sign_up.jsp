@@ -3,7 +3,7 @@
 <html>
 <title>Sign up Page</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/w3.css">
+<link rel="stylesheet" href="../css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -29,7 +29,7 @@
             <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()"
                title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         </li>
-        <li><a href="/../index.jsp" class="w3-padding-large w3-white">Home</a></li>
+        <li><a href="../index.jsp" class="w3-padding-large w3-white">Home</a></li>
         <li class="w3-hide-small"><a href="main_features.jsp" class="w3-padding-large w3-hover-white">Main Features</a></li>
         <li class="w3-hide-small"><a href="benefit.jsp" class="w3-padding-large w3-hover-white">Benefit for your code</a></li>
         <li class="w3-hide-small"><a href="about_us.jsp" class="w3-padding-large w3-hover-white">About us</a></li>
@@ -58,7 +58,7 @@
     <input type="text" name="confirm password">
     <br><br>
     <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button"
-            onclick="window.location.href='/home.jsp'">Sign up
+            onclick="window.location.href='../home.jsp'">Sign up
     </button>
 </header>
 
