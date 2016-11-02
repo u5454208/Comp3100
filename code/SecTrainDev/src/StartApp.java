@@ -22,7 +22,6 @@ import com.amazonaws.regions.Region;
 import com.amazonaws.regions.Regions;
 import com.amazonaws.services.ec2.*;
 import com.amazonaws.services.ec2.model.*;
-import org.json.simple.JSONObject;
 
 /**
  * Servlet implementation class StartApp
@@ -68,7 +67,7 @@ public class StartApp extends HttpServlet
 			        ec2.setRegion(usWest2);
 			        // Initializes Instance Request
 			        RunInstancesRequest runn = new RunInstancesRequest();
-			        runn.withImageId("ami-9364c2f3")
+			        runn.withImageId("ami-9419bff4")
 			                .withInstanceType("t2.micro")
 			                .withMinCount(1)
 			                .withMaxCount(1)

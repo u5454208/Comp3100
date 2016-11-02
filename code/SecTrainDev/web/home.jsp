@@ -2,7 +2,7 @@
 <html>
 <title>Security Training as a Service</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="/css/w3.css">
+<link rel="stylesheet" href="css/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -37,7 +37,7 @@
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
         <ul class="w3-navbar w3-left-align w3-large w3-black">
-            <li><a class="w3-padding-large" href="main_features.jsp">Learning Material</a></li>
+            <li><a class="w3-padding-large" href="material.jsp.jsp">Learning Material</a></li>
             <li><a class="w3-padding-large" href="VMControl.jsp">Start Pen-testing</a></li>
             <li><a class="w3-padding-large w3-right" href="index.jsp">Log out</a></li>
         </ul>
