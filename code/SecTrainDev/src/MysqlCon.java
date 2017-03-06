@@ -9,8 +9,8 @@ class MysqlCon {
         String username = "admin";
         String password = "password";
 
-        //new MysqlCon().sign_up(username, password);
-        new MysqlCon().login(username, password);
+        new MysqlCon().sign_up(username, password);
+        //new MysqlCon().login(username, password);
     }
 
 
@@ -24,7 +24,12 @@ class MysqlCon {
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/account", "root", "1234567890");
             Statement stmt = con.createStatement();
-            stmt.executeUpdate("INSERT INTO userinfo VALUES ('" + username + "','" + password + "')");
+            ResultSet rs = stmt.executeQuery("SELECT username FROM userinfo WHERE username = '" + username + "'");
+            if (!rs.next()){
+                stmt.executeUpdate("INSERT INTO userinfo VALUES ('" + username + "','" + password + "')");
+            }else {
+                System.out.println("gndy");
+            }
 
         } catch (Exception e) {
             System.out.println(e);
@@ -39,7 +44,6 @@ class MysqlCon {
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT password FROM userinfo WHERE username = '" + username + "'");
             while (rs.next()) {
-                System.out.println(rs.getString(1));
                 if (rs.getString(1).equals(password)) {
                     System.out.println("Pass");
                 } else {
