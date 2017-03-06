@@ -38,13 +38,13 @@ class MysqlCon extends HttpServlet {
         String password = request.getParameter("password");
         if(method.equals("signup"))
         {
-            new MysqlCon().sign_up(username, password);
             out= response.getWriter();
+            new MysqlCon().sign_up(username, password);
         }
         if(method.equals("login"))
         {
-            new MysqlCon().login(username, password);
             out= response.getWriter();
+            new MysqlCon().login(username, password);
         }
     }
     // 处理 POST 方法请求的方法
@@ -52,14 +52,21 @@ class MysqlCon extends HttpServlet {
         doGet(request, response);
     }
     public void sign_up(String username, String password) {
-        try{
+        try {
             Class.forName("com.mysql.jdbc.Driver");
-            Connection con=DriverManager.getConnection(
-                    "jdbc:mysql://localhost:3306/account","root","1234567890");
-            Statement stmt=con.createStatement();
-            stmt.executeUpdate("INSERT INTO userinfo VALUES ('"+username+"','"+password+"')");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/account", "root", "1234567890");
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT username FROM userinfo WHERE username = '" + username + "'");
+            if (!rs.next()){
+                stmt.executeUpdate("INSERT INTO userinfo VALUES ('" + username + "','" + password + "')");
+            }else {
+                System.out.println("gndy");
+            }
 
-        }catch(Exception e){ System.out.println(e);}
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
     public void login(String username, String password) {
         try {
@@ -71,9 +78,9 @@ class MysqlCon extends HttpServlet {
             while (rs.next()) {
                 System.out.println(rs.getString(1));
                 if (rs.getString(1).equals(password)) {
-                    System.out.println("Pass");
+                    response.addHeader("result", "Pass");
                 } else {
-                    System.out.println("SB");
+                    response.addHeader("result", "SB");
                 }
             }
         } catch (Exception e) {
