@@ -55,19 +55,32 @@
 <header class="w3-container w3-blue w3-center w3-padding-64">
     <h1 class="w3-margin w3-jumbo">Log in your account</h1>
     <h5 class="w3-padding-8">Username:<br></h5>
-    <input type="text" name="username">
+    <input type="text" name="username" id="1">
     <br>
     <h5 class="w3-padding-8">Password:<br></h5>
-    <input type="text" name="password">
+    <input type="text" name="password" id="2">
     <br><br>
     <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button"
-            onclick="window.location.href='../home.jsp'">Login
+            onclick="login()">Login
     </button>
     <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button"
             onclick="window.location.href='sign_up.jsp'">Sign up
     </button>
 </header>
+<script>
+    function login() {
+        var username = document.getElementById("1").value;
+        var password = document.getElementById("2").value;
 
+        if (username == "admin" && password == "admin"){
+           window.location.href = '../home.jsp';
+        }
+        else {
+            alert("Wrong username or password!")
+        }
+    }
+
+</script>
 <script>
     // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {

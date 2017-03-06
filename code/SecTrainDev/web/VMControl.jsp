@@ -48,7 +48,7 @@ var ID=new Array();
                 {
                 	    window.open('http://'+xmlhttp.getResponseHeader('publicDNS')+':8080/webbank');
                 	}
-                setTimeout(open, 60000); 
+                setTimeout(open, 50000);
                 function stop() {
                 	$().ready(function () {
                                 $('#2').trigger("click");
@@ -56,7 +56,7 @@ var ID=new Array();
                     );
                     alert("Timeout!");
                 }
-                setTimeout(stop, 120000);
+                setTimeout(stop, 110000);
             }
         }
     }
