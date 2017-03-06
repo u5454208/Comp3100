@@ -49,19 +49,52 @@
 <header class="w3-container w3-blue w3-center w3-padding-64">
     <h1 class="w3-margin w3-jumbo">Create your account</h1>
     <h5 class="w3-padding-8">Username:<br></h5>
-    <input type="text" name="username">
+    <input type="text" name="username" id="1">
     <br>
     <h5 class="w3-padding-8">Password:<br></h5>
-    <input type="text" name="password">
+    <input type="text" name="password" id="2">
     <br>
     <h5 class="w3-padding-8">Confirm password:<br></h5>
-    <input type="text" name="confirm password">
+    <input type="text" name="confirm password" id="3">
     <br><br>
     <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button"
-            onclick="window.location.href='../home.jsp'">Sign up
+            onclick="signup()">Sign up
     </button>
 </header>
-
+<script language="JavaScript">
+    function signup() {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        var username = document.getElementById("1").value;
+        username = encodeURI(encodeURI(username));
+        var password = document.getElementById("2").value;
+        password = encodeURI(encodeURI(username));
+        if(password!=document.getElementById("3").value)
+        {
+            alert("The second password is not the same as the first one");
+        }
+        else{
+            xmlhttp.open("POST", "MysqlCon", true);
+            xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xmlhttp.send("method=signup&username=" + username + "&password=" + password );
+            xmlhttp.onreadystatechange = function () {
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                     if (xmlhttp.getResponseHeader('result')=="Pass"){
+                               window.location.href = '../home.jsp';
+                            }
+                            else {
+                                alert("The username already exists!")
+                            }
+                }
+            }      
+        }
+    }
+</script>
 <script>
     // Used to toggle the menu on small screens when clicking on the menu button
     function myFunction() {
