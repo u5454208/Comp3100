@@ -25,4 +25,12 @@
       <servlet-name>StopApp</servlet-name>
       <url-pattern>/StopApp</url-pattern>
     </servlet-mapping>
+   <servlet>
+    <servlet-name>MysqlCon</servlet-name>
+    <servlet-class>MysqlCon</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MysqlCon</servlet-name>
+    <url-pattern>/MysqlCon</url-pattern>
+  </servlet-mapping>
 </web-app>
