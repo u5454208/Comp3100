@@ -60,8 +60,9 @@ class MysqlCon extends HttpServlet {
             ResultSet rs = stmt.executeQuery("SELECT username FROM userinfo WHERE username = '" + username + "'");
             if (!rs.next()){
                 stmt.executeUpdate("INSERT INTO userinfo VALUES ('" + username + "','" + password + "')");
+                response.addHeader("result", "Pass");
             }else {
-                System.out.println("gndy");
+                response.addHeader("result", "gndy");
             }
 
         } catch (Exception e) {
