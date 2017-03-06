@@ -67,19 +67,33 @@
             onclick="window.location.href='sign_up.jsp'">Sign up
     </button>
 </header>
-<script>
+<script language="JavaScript">
     function login() {
-        var username = document.getElementById("1").value;
-        var password = document.getElementById("2").value;
-
-        if (username == "admin" && password == "admin"){
-           window.location.href = '../home.jsp';
+        var xmlhttp;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
         }
-        else {
-            alert("Wrong username or password!")
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        var username = document.getElementById("1").value;
+        username = encodeURI(encodeURI(username));
+        var password = document.getElementById("2").value;
+        password = encodeURI(encodeURI(username));
+        xmlhttp.open("POST", "MysqlCon", true);
+        xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xmlhttp.send("method=login&username=" + username + "&password=" + password );
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                 if (xmlhttp.getResponseHeader('result')=="Pass"){
+                           window.location.href = '../home.jsp';
+                        }
+                        else {
+                            alert("Wrong username or password!")
+                        }
+            }
         }
     }
-
 </script>
 <script>
     // Used to toggle the menu on small screens when clicking on the menu button
