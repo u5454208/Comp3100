@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="5d0e0d12-ec69-4f33-9a17-53f95e65c7e4" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/data.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/SecTrainDev_war_exploded/SecTrainDev_war exploded.war" afterPath="$PROJECT_DIR$/out/artifacts/SecTrainDev_war_exploded/SecTrainDev_war exploded.war" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -71,21 +72,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="StartApp.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="StartApp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/StartApp.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="375">
               <caret line="51" column="4" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/data.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="24" column="1" lean-forward="false" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -1245,7 +1236,7 @@
       <workItem from="1488338650685" duration="23000" />
       <workItem from="1488758082509" duration="8411000" />
       <workItem from="1488980526010" duration="177000" />
-      <workItem from="1488980737628" duration="541000" />
+      <workItem from="1488980737628" duration="594000" />
     </task>
     <task id="LOCAL-00001" summary="remove something">
       <created>1477034616691</created>
@@ -1303,11 +1294,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488794590221</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="delete data.java">
+      <created>1488981398405</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1488981398405</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77305000" />
+    <option name="totallyTimeSpent" value="77358000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1434,7 +1432,8 @@
     <MESSAGE value="Add Mysql sign up function" />
     <MESSAGE value="Add Mysql login function" />
     <MESSAGE value="update Mysql sign up function" />
-    <option name="LAST_COMMIT_MESSAGE" value="update Mysql sign up function" />
+    <MESSAGE value="delete data.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete data.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
