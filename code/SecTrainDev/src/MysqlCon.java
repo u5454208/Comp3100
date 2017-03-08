@@ -25,9 +25,9 @@ class MysqlCon extends HttpServlet {
         String password;
     public void init()
     {
-        method=new String;
-        username=new String;
-        password=new String;
+        method=new String();
+        username=new String();
+        password=new String();
     }
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
     {
