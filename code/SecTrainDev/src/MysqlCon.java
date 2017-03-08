@@ -19,7 +19,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.lang.*;
 
-class MysqlCon extends HttpServlet {
+@WebServlet("/StartApp")
+public class MysqlCon extends HttpServlet {
         String method;
         String username;
         String password;
