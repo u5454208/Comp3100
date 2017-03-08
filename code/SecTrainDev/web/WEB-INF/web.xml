@@ -31,6 +31,6 @@
   </servlet>
   <servlet-mapping>
     <servlet-name>MysqlCon</servlet-name>
-    <url-pattern>../MysqlCon</url-pattern>
+    <url-pattern>/MysqlCon</url-pattern>
   </servlet-mapping>
 </web-app>
