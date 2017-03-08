@@ -39,19 +39,19 @@ class MysqlCon extends HttpServlet {
         if(method.equals("signup"))
         {
             out= response.getWriter();
-            new MysqlCon().sign_up(username, password);
+            new MysqlCon().sign_up(username, password, response);
         }
         if(method.equals("login"))
         {
             out= response.getWriter();
-            new MysqlCon().login(username, password);
+            new MysqlCon().login(username, password, response);
         }
     }
     // 处理 POST 方法请求的方法
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
-    public void sign_up(String username, String password) {
+    public void sign_up(String username, String password, HttpServletResponse response) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
@@ -69,7 +69,7 @@ class MysqlCon extends HttpServlet {
             System.out.println(e);
         }
     }
-    public void login(String username, String password) {
+    public void login(String username, String password, HttpServletResponse response) {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
