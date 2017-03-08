@@ -79,7 +79,7 @@
         var username = document.getElementById("1").value;
         username = encodeURI(encodeURI(username));
         var password = document.getElementById("2").value;
-        password = encodeURI(encodeURI(username));
+        password = encodeURI(encodeURI(password));
         xmlhttp.open("POST", "MysqlCon", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xmlhttp.send("method=login&username=" + username + "&password=" + password );
