@@ -63,7 +63,7 @@ public class MysqlCon extends HttpServlet {
                 stmt.executeUpdate("INSERT INTO userinfo VALUES ('" + username + "','" + password + "')");
                 response.addHeader("result", "Pass");
             }else {
-                response.addHeader("result", "gndy");
+                response.addHeader("result", "Exist");
             }
 
         } catch (Exception e) {
@@ -72,19 +72,30 @@ public class MysqlCon extends HttpServlet {
     }
     public void login(String username, String password, HttpServletResponse response) {
         try {
+            response.getWriter().print("2");
             Class.forName("com.mysql.jdbc.Driver");
+            response.getWriter().print("3");
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/account", "root", "1234567890");
+            response.getWriter().print("4");
             Statement stmt = con.createStatement();
+            response.getWriter().print("5");
             ResultSet rs = stmt.executeQuery("SELECT password FROM userinfo WHERE username = '" + username + "'");
-            while (rs.next()) {
+            response.getWriter().print("6");
+            if (rs.next()) {
                 System.out.println(rs.getString(1));
                 if (rs.getString(1).equals(password)) {
+                    response.getWriter().print("Pass");
                     response.addHeader("result", "Pass");
                 } else {
+                    response.getWriter().print("SB");
                     response.addHeader("result", "SB");
                 }
+            }else {
+                response.getWriter().print("SB");
+                response.addHeader("result", "SB");
             }
+            rs.close();
         } catch (Exception e) {
             System.out.println(e);
         }
