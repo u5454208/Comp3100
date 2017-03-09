@@ -73,13 +73,13 @@
         var username = document.getElementById("1").value;
         username = encodeURI(encodeURI(username));
         var password = document.getElementById("2").value;
-        password = encodeURI(encodeURI(username));
+        password = encodeURI(encodeURI(password));
         if(password!=document.getElementById("3").value)
         {
             alert("The second password is not the same as the first one");
         }
         else{
-            xmlhttp.open("POST", "MysqlCon", true);
+            xmlhttp.open("POST", "/SecTrainDev/MysqlCon", true);
             xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xmlhttp.send("method=signup&username=" + username + "&password=" + password );
             xmlhttp.onreadystatechange = function () {
