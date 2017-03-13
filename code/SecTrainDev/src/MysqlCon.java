@@ -35,7 +35,7 @@ public class MysqlCon extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         String method = request.getParameter("method");
-        if(method.equals("token"))
+        if(method.equals("grade"))
         {
             String token = request.getParameter("token");
             out= response.getWriter();
