@@ -65,11 +65,12 @@ public class MysqlCon extends HttpServlet {
             }else {
                 response.addHeader("result", "Exist");
             }
-
+            rs.close();
         } catch (Exception e) {
             System.out.println(e);
         }
     }
+
     public void login(String username, String password, HttpServletResponse response) {
         try {
             response.getWriter().print("2");
@@ -94,6 +95,24 @@ public class MysqlCon extends HttpServlet {
             }else {
                 response.getWriter().print("SB");
                 response.addHeader("result", "SB");
+            }
+            rs.close();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+    }
+
+    public void token(String token, HttpServletResponse response) {
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+            Connection con = DriverManager.getConnection(
+                    "jdbc:mysql://localhost:3306/account", "root", "1234567890");
+            Statement stmt = con.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT score FROM token WHERE token = '" + token + "'");
+            if (rs.next()) {
+                response.addHeader("result", "5");
+            }else {
+                response.addHeader("result", "0");
             }
             rs.close();
         } catch (Exception e) {
