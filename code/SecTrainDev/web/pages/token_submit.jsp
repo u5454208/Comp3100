@@ -65,7 +65,32 @@
         </button>
     </form>
 </header>
-
+<script language="JavaScript">
+    function login() {
+        var xmlhttp;
+        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        }
+        else {// code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        var token = document.getElementById("3").value;
+        token = encodeURI(encodeURI(token));
+        xmlhttp.open("POST", "/MysqlCon", true);
+        xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xmlhttp.send("method=grade&token=" + token );
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                 if (xmlhttp.getResponseHeader('result')=="5"){
+                           alert("Congratulation! You find the token in this application!");
+                        }
+                        else {
+                            alert("Wrong token!");
+                        }
+            }
+        }
+    }
+</script>
 
 <script>
     // Used to toggle the menu on small screens when clicking on the menu button
