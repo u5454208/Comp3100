@@ -35,17 +35,26 @@ public class MysqlCon extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         String method = request.getParameter("method");
-        String username = request.getParameter("username");
-        String password = request.getParameter("password");
-        if(method.equals("signup"))
+        if(method.equals("token"))
         {
+            String token = request.getParameter("token");
             out= response.getWriter();
-            new MysqlCon().sign_up(username, password, response);
+            new MysqlCon().token(token, response);
         }
-        if(method.equals("login"))
+        else
         {
-            out= response.getWriter();
-            new MysqlCon().login(username, password, response);
+            String username = request.getParameter("username");
+            String password = request.getParameter("password");
+            if(method.equals("signup"))
+            {
+                out= response.getWriter();
+                new MysqlCon().sign_up(username, password, response);
+            }
+            if(method.equals("login"))
+            {
+                out= response.getWriter();
+                new MysqlCon().login(username, password, response);
+            }
         }
     }
     // 处理 POST 方法请求的方法
