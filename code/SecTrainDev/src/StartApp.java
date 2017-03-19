@@ -67,7 +67,7 @@ public class StartApp extends HttpServlet
 			        ec2.setRegion(usWest2);
 			        // Initializes Instance Request
 			        RunInstancesRequest runn = new RunInstancesRequest();
-			        runn.withImageId("ami-f078f090")
+			        runn.withImageId("ami-5a7af23a")
 			                .withInstanceType("t2.micro")
 			                .withMinCount(1)
 			                .withMaxCount(1)
