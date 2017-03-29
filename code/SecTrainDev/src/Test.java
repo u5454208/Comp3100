@@ -33,7 +33,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response) thro
 {
     response.setContentType("text/html;charset=UTF-8");
     PrintWriter out = response.getWriter();
-    select	ion = request.getParameter("selection");
+    selection = request.getParameter("selection");
     if(selection.equals("webbank"))
     {
     	String questionID= "7b7387b14556";
