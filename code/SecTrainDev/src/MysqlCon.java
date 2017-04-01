@@ -70,6 +70,7 @@ public class MysqlCon extends HttpServlet {
             ResultSet rs = stmt.executeQuery("SELECT username FROM userinfo WHERE username = '" + username + "'");
             if (!rs.next()){
                 stmt.executeUpdate("INSERT INTO userinfo VALUES ('" + username + "','" + password + "')");
+                stmt.executeUpdate("INSERT INTO usergrade VALUES ('" + username + "','0')");
                 response.addHeader("result", "Pass");
             }else {
                 response.addHeader("result", "Exist");

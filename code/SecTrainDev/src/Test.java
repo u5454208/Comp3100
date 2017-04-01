@@ -4,7 +4,7 @@
 
 
 
-import com.spotify.docker.client.DefaultDockerClient;
+/*import com.spotify.docker.client.DefaultDockerClient;
 import com.spotify.docker.client.DockerClient;
 import com.spotify.docker.client.DockerClient.AttachParameter;
 import com.spotify.docker.client.LogStream;
@@ -22,7 +22,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.ArrayList;
 import java.util.List;
 import java.lang.*;
-public class text extends HttpServlet {
+*/
+public class Test extends HttpServlet {
 
 	String selection;
 public void init()
