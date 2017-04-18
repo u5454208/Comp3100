@@ -1,58 +1,62 @@
-/**
- * Created by lrz0927 on 10/3/17.
- */
-
-
-
-/*import com.spotify.docker.client.DefaultDockerClient;
-import com.spotify.docker.client.DockerClient;
-import com.spotify.docker.client.DockerClient.AttachParameter;
-import com.spotify.docker.client.LogStream;
-import com.spotify.docker.client.exceptions.DockerCertificateException;
+package tmp;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
-import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.*;
 import java.lang.*;
-*/
-public class Test extends HttpServlet {
+import com.jcraft.jsch.*;
 
-	String selection;
-public void init()
-{
-    selection=new String();
-}
-public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
-{
-    response.setContentType("text/html;charset=UTF-8");
-    PrintWriter out = response.getWriter();
-    selection = request.getParameter("selection");
-    if(selection.equals("webbank"))
-    {
-    	String questionID= "7b7387b14556";
-        out= response.getWriter();
-        new tmp().selection(questionID, response);
-    }
-}
-// 处理 POST 方法请求的方法
-public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-    doGet(request, response);
-}
-	public void selection(String questionID) throws DockerCertificateException {
-		// TODO Auto-generated method stub
-		final DockerClient docker = DefaultDockerClient.fromEnv().build();
-		docker.startContainer(questionID);
-		
-		docker.stopContainer(questionID, 1800);
-		
-	}
+public class tmp{
 
+	/* -*-mode:java; c-basic-offset:2; indent-tabs-mode:nil -*- */
+	/**
+	 * This program will demonstrate the user authentification by public key.
+	 *   $ CLASSPATH=.:../build javac UserAuthPubKey.java
+	 *   $ CLASSPATH=.:../build java UserAuthPubKey
+	 * You will be asked username, hostname, privatekey(id_dsa) and passphrase. 
+	 * If everything works fine, you will get the shell prompt
+	 *
+	 */
+	  public static void main(String[] arg){
+		String keyfile= "F:\\很坑的作业\\课程\\2017 semester 1\\comp3500\\COMP3100.pem";
+	    try{
+	      JSch jsch=new JSch();
+	      String host=null;
+	      Scanner in = new Scanner(System.in);
+	      String PublicDNS = in.next();
+	      host = "ec2-user@" + PublicDNS;
+	      String user=host.substring(0, host.indexOf('@'));
+	      host=host.substring(host.indexOf('@')+1);
+	      jsch.addIdentity(keyfile);
+	      java.util.Properties config = new java.util.Properties(); 
+	      config.put("StrictHostKeyChecking", "no");
+	      
+	      Session session=jsch.getSession(user, host, 22);
+	      session.setConfig(config);
+	      session.connect();
+
+	      Channel channel=session.openChannel("exec");
+	      String command = "docker start bank";
+	      ((ChannelExec)channel).setCommand(command);  
+	      
+	      channel.setInputStream(null);
+
+	      ((ChannelExec)channel).setErrStream(System.err);
+	      channel.connect();
+	      Thread.sleep(10000);
+	      command = "docker stop bank";
+		  ((ChannelExec)channel).setCommand(command);  
+		  channel.connect();
+	      channel.disconnect();
+	      session.disconnect();
+	    }
+	    catch(Exception e){
+	      System.out.println(e);
+	    }
+	  }
 }
