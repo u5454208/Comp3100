@@ -33,4 +33,12 @@
     <servlet-name>MysqlCon</servlet-name>
     <url-pattern>/MysqlCon</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>Selection</servlet-name>
+    <servlet-class>Selection</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Selection</servlet-name>
+    <url-pattern>/Selection</url-pattern>
+  </servlet-mapping>
 </web-app>
