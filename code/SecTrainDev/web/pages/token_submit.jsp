@@ -66,7 +66,7 @@
     </form>
 </header>
 <script language="JavaScript">
-    function login() {
+    function grade() {
         var xmlhttp;
         if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
@@ -75,7 +75,6 @@
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
         var token = document.getElementById("3").value;
-        token = encodeURI(encodeURI(token));
         xmlhttp.open("POST", "/MysqlCon", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xmlhttp.send("method=grade&token=" + token );

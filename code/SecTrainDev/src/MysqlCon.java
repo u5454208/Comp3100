@@ -39,7 +39,7 @@ public class MysqlCon extends HttpServlet {
         {
             String token = request.getParameter("token");
             out= response.getWriter();
-            new MysqlCon().token(token, response);
+            new MysqlCon().grade(token, response);
         }
         else
         {
@@ -94,7 +94,6 @@ public class MysqlCon extends HttpServlet {
             ResultSet rs = stmt.executeQuery("SELECT password FROM userinfo WHERE username = '" + username + "'");
             response.getWriter().print("6");
             if (rs.next()) {
-                System.out.println(rs.getString(1));
                 if (rs.getString(1).equals(password)) {
                     response.getWriter().print("Pass");
                     response.addHeader("result", "Pass");
@@ -112,16 +111,20 @@ public class MysqlCon extends HttpServlet {
         }
     }
 
-    public void token(String token, HttpServletResponse response) {
+    public void grade(String token, HttpServletResponse response) {
         try {
+            System.out.println(token);
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/account", "root", "1234567890");
             Statement stmt = con.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT score FROM token WHERE token = '" + token + "'");
             if (rs.next()) {
+                System.out.println("5");
                 response.addHeader("result", "5");
+                stmt.executeUpdate("INSERT INTO usergrade VALUES ('" + username + "','" + password + "')");
             }else {
+                System.out.println("0");
                 response.addHeader("result", "0");
             }
             rs.close();

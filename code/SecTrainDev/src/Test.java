@@ -1,4 +1,4 @@
-package tmp;
+//package tmp;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -9,9 +9,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.*;
 import java.lang.*;
-import com.jcraft.jsch.*;
+//import com.jcraft.jsch.*;
 
-public class tmp{
+//public class tmp{
 
 	/* -*-mode:java; c-basic-offset:2; indent-tabs-mode:nil -*- */
 	/**
@@ -21,7 +21,7 @@ public class tmp{
 	 * You will be asked username, hostname, privatekey(id_dsa) and passphrase. 
 	 * If everything works fine, you will get the shell prompt
 	 *
-	 */
+	 *
 	  public static void main(String[] arg){
 		String keyfile= "F:\\很坑的作业\\课程\\2017 semester 1\\comp3500\\COMP3100.pem";
 	    try{
@@ -60,3 +60,4 @@ public class tmp{
 	    }
 	  }
 }
+*/
