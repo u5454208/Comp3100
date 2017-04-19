@@ -54,7 +54,7 @@
 <!-- Header -->
 <header class="w3-container w3-blue w3-center w3-padding-64">
     <h1 class="w3-margin w3-jumbo">Choose your test</h1>
-    <table >
+    <table id = 1>
         <form class="w3-left-align">
             <tr>
                 <input  type="radio" name="test" value="webbank"> web bank<br></tr>
@@ -67,7 +67,7 @@
     </button>
 </header>
 <script language="JavaScript">
-    function login() {
+    function Selection() {
         var xmlhttp;
         if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
@@ -75,21 +75,15 @@
         else {// code for IE6, IE5
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
-        var username = document.getElementById("1").value;
-        username = encodeURI(encodeURI(username));
-        var password = document.getElementById("2").value;
-        password = encodeURI(encodeURI(password));
-        xmlhttp.open("POST", "/MysqlCon", true);
+        var Selection = document.getElementById("1").value;
+        Selection = encodeURI(encodeURI(Selection));
+        xmlhttp.open("POST", "/Selection", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xmlhttp.send("method=login&username=" + username + "&password=" + password );
+        xmlhttp.send("Selection=" + Selection);
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                if (xmlhttp.getResponseHeader('result')=="Pass"){
+                    
                     window.location.href = '../home.jsp';
-                }
-                else {
-                    alert("Wrong username or password!")
-                }
             }
         }
     }
