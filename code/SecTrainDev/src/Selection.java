@@ -24,7 +24,7 @@ import java.util.*;
 import java.lang.*;
 import com.jcraft.jsch.*;
 
-public class Connection extends HttpServlet {
+public class Selection extends HttpServlet {
 
 		String keyfile;
 		public void init()
