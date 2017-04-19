@@ -54,7 +54,7 @@
 <!-- Header -->
 <header class="w3-container w3-blue w3-center w3-padding-64">
     <h1 class="w3-margin w3-jumbo">Choose your test</h1>
-    <table id = 1>
+    <table id = "1">
         <form class="w3-left-align">
             <tr>
                 <input  type="radio" name="test" value="webbank"> web bank<br></tr>
@@ -63,7 +63,7 @@
             </tr>
         </form>
     </table>
-    <button class="w3-btn w3-padding-8 w3-large w3-margin-top" type="button">Confirm
+    <button class="w3-btn w3-padding-8 w3-large w3-margin-top" onclick="Selection()" type="button">Confirm
     </button>
 </header>
 <script language="JavaScript">
