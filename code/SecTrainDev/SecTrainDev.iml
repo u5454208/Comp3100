@@ -34,5 +34,6 @@
     <orderEntry type="library" name="com.amazonaws:aws-java-sdk:1.8.0" level="application" />
     <orderEntry type="library" name="servletapi:servlet-api:2.4" level="application" />
     <orderEntry type="library" name="mysql-connector" level="project" />
+    <orderEntry type="library" name="jsch-0.1.54" level="project" />
   </component>
 </module>
