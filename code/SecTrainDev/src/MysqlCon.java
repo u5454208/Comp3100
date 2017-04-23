@@ -105,12 +105,12 @@ public class MysqlCon extends HttpServlet {
                     response.getWriter().print("Pass");
                     response.addHeader("result", "Pass");
                 } else {
-                    response.getWriter().print("SB");
-                    response.addHeader("result", "SB");
+                    response.getWriter().print("Fail");
+                    response.addHeader("result", "Fail");
                 }
             }else {
-                response.getWriter().print("SB");
-                response.addHeader("result", "SB");
+                response.getWriter().print("Fail");
+                response.addHeader("result", "Fail");
             }
             rs.close();
         } catch (Exception e) {

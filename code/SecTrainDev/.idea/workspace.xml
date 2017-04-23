@@ -102,14 +102,14 @@
         <entry file="file://$PROJECT_DIR$/src/MysqlCon.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="183">
-              <caret line="81" column="23" lean-forward="true" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+              <caret line="112" column="50" lean-forward="false" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
               <folding>
-                <marker date="1492949486000" expanded="true" signature="2463:2528" ph="SELECT usern... userinfo" />
-                <marker date="1492949486000" expanded="true" signature="2597:2664" ph="INSERT INTO userinfo... " />
-                <marker date="1492949486000" expanded="true" signature="2704:2757" ph="INSERT INTO usergrade... " />
-                <marker date="1492949486000" expanded="true" signature="3720:3785" ph="SELECT passw... userinfo" />
-                <marker date="1492949486000" expanded="true" signature="4945:4998" ph="SELECT score... token" />
-                <marker date="1492949486000" expanded="true" signature="5159:5227" ph="INSERT INTO usergrade... " />
+                <marker date="1492951068000" expanded="true" signature="2463:2528" ph="SELECT usern... userinfo" />
+                <marker date="1492951068000" expanded="true" signature="2597:2664" ph="INSERT INTO userinfo... " />
+                <marker date="1492951068000" expanded="true" signature="2704:2757" ph="INSERT INTO usergrade... " />
+                <marker date="1492951068000" expanded="true" signature="3720:3785" ph="SELECT passw... userinfo" />
+                <marker date="1492951068000" expanded="true" signature="4953:5006" ph="SELECT score... token" />
+                <marker date="1492951068000" expanded="true" signature="5167:5235" ph="INSERT INTO usergrade... " />
               </folding>
             </state>
           </provider>
@@ -125,16 +125,6 @@
                 <element signature="e#1076#1077#0" expanded="false" />
                 <element signature="e#1110#1111#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="token_submit.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pages/token_submit.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1140">
-              <caret line="76" column="55" lean-forward="false" selection-start-line="76" selection-start-column="55" selection-end-line="76" selection-end-column="55" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -192,8 +182,18 @@
       <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/login.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1245">
+            <state relative-caret-position="236">
               <caret line="83" column="62" lean-forward="false" selection-start-line="83" selection-start-column="62" selection-end-line="83" selection-end-column="62" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sign_up.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/pages/sign_up.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-827">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -206,6 +206,7 @@
               <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="false" />
+                <marker date="1492949527000" expanded="true" signature="3384:3516" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -305,7 +306,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="19" />
+    <option name="x" value="32" />
     <option name="y" value="22" />
     <option name="width" value="1395" />
     <option name="height" value="878" />
@@ -1170,7 +1171,7 @@
       <workItem from="1492601489541" duration="3270000" />
       <workItem from="1492664118428" duration="6079000" />
       <workItem from="1492871722439" duration="359000" />
-      <workItem from="1492873260571" duration="894000" />
+      <workItem from="1492873260571" duration="1292000" />
     </task>
     <task id="LOCAL-00001" summary="remove something">
       <created>1477034616691</created>
@@ -1277,11 +1278,18 @@
       <option name="project" value="LOCAL" />
       <updated>1492670205600</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add comment for MysqlCon.java">
+      <created>1492949508565</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1492949508565</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108324000" />
+    <option name="totallyTimeSpent" value="108722000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1293,7 +1301,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="19" y="22" width="1395" height="878" extended-state="0" />
+    <frame x="32" y="22" width="1395" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1319,6 +1327,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.49741316" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1744272" sideWeight="0.60692215" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18038654" sideWeight="0.39307788" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.4911374" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1329,7 +1338,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880098" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.4911374" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1416,7 +1424,8 @@
     <MESSAGE value="connect the user interface with the function" />
     <MESSAGE value="connect the user interface with the function for the token submit" />
     <MESSAGE value="!!success useing servlet  \ docker ssh" />
-    <option name="LAST_COMMIT_MESSAGE" value="!!success useing servlet  \ docker ssh" />
+    <MESSAGE value="add comment for MysqlCon.java" />
+    <option name="LAST_COMMIT_MESSAGE" value="add comment for MysqlCon.java" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1429,7 +1438,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/a542a588/8f8ade45-f349-4d96-adfc-9292414dff15/account.usergrade" />
     <entry file="dbDummy://dbtable:/a542a588/8f8ade45-f349-4d96-adfc-9292414dff15/account.usergrade" />
     <entry file="dbDummy://dbtable:/a542a588/8f8ade45-f349-4d96-adfc-9292414dff15/account.usergrade" />
     <entry file="dbDummy://dbtable:/a542a588/8f8ade45-f349-4d96-adfc-9292414dff15/account.usergrade" />
@@ -1573,6 +1581,7 @@
           <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="false" />
+            <marker date="1492949527000" expanded="true" signature="3384:3516" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -1581,14 +1590,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1245">
-          <caret line="83" column="62" lean-forward="false" selection-start-line="83" selection-start-column="62" selection-end-line="83" selection-end-column="62" />
           <folding />
         </state>
       </provider>
@@ -1619,17 +1620,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="83" column="62" lean-forward="false" selection-start-line="83" selection-start-column="62" selection-end-line="83" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/sign_up.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-827">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/MysqlCon.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="183">
-          <caret line="81" column="23" lean-forward="true" selection-start-line="81" selection-start-column="23" selection-end-line="81" selection-end-column="23" />
+          <caret line="112" column="50" lean-forward="false" selection-start-line="112" selection-start-column="50" selection-end-line="112" selection-end-column="50" />
           <folding>
-            <marker date="1492949486000" expanded="true" signature="2463:2528" ph="SELECT usern... userinfo" />
-            <marker date="1492949486000" expanded="true" signature="2597:2664" ph="INSERT INTO userinfo... " />
-            <marker date="1492949486000" expanded="true" signature="2704:2757" ph="INSERT INTO usergrade... " />
-            <marker date="1492949486000" expanded="true" signature="3720:3785" ph="SELECT passw... userinfo" />
-            <marker date="1492949486000" expanded="true" signature="4945:4998" ph="SELECT score... token" />
-            <marker date="1492949486000" expanded="true" signature="5159:5227" ph="INSERT INTO usergrade... " />
+            <marker date="1492951068000" expanded="true" signature="2463:2528" ph="SELECT usern... userinfo" />
+            <marker date="1492951068000" expanded="true" signature="2597:2664" ph="INSERT INTO userinfo... " />
+            <marker date="1492951068000" expanded="true" signature="2704:2757" ph="INSERT INTO usergrade... " />
+            <marker date="1492951068000" expanded="true" signature="3720:3785" ph="SELECT passw... userinfo" />
+            <marker date="1492951068000" expanded="true" signature="4953:5006" ph="SELECT score... token" />
+            <marker date="1492951068000" expanded="true" signature="5167:5235" ph="INSERT INTO usergrade... " />
           </folding>
         </state>
       </provider>
