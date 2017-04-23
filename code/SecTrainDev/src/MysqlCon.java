@@ -57,16 +57,20 @@ public class MysqlCon extends HttpServlet {
             }
         }
     }
-    // 处理 POST 方法请求的方法
+
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doGet(request, response);
     }
+
+    // Code for the sign up function
     public void sign_up(String username, String password, HttpServletResponse response) {
         try {
+            //response to the writer for each stage of the jdbc
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/account", "root", "1234567890");
             Statement stmt = con.createStatement();
+            // do the query for login
             ResultSet rs = stmt.executeQuery("SELECT username FROM userinfo WHERE username = '" + username + "'");
             if (!rs.next()){
                 stmt.executeUpdate("INSERT INTO userinfo VALUES ('" + username + "','" + password + "')");
@@ -81,8 +85,10 @@ public class MysqlCon extends HttpServlet {
         }
     }
 
+    //Code for the login function
     public void login(String username, String password, HttpServletResponse response) {
         try {
+            //response to the writer for each stage of the jdbc
             response.getWriter().print("2");
             Class.forName("com.mysql.jdbc.Driver");
             response.getWriter().print("3");
@@ -91,6 +97,7 @@ public class MysqlCon extends HttpServlet {
             response.getWriter().print("4");
             Statement stmt = con.createStatement();
             response.getWriter().print("5");
+            // do the query for login
             ResultSet rs = stmt.executeQuery("SELECT password FROM userinfo WHERE username = '" + username + "'");
             response.getWriter().print("6");
             if (rs.next()) {
@@ -111,13 +118,16 @@ public class MysqlCon extends HttpServlet {
         }
     }
 
+    //Code for the grading function
     public void grade(String token, HttpServletResponse response) {
         try {
+            // use jdbc too
             System.out.println(token);
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/account", "root", "1234567890");
             Statement stmt = con.createStatement();
+            // do the query for grading
             ResultSet rs = stmt.executeQuery("SELECT score FROM token WHERE token = '" + token + "'");
             if (rs.next()) {
                 System.out.println("5");
