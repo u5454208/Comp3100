@@ -86,6 +86,7 @@
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                      if (xmlhttp.getResponseHeader('result')=="Pass"){
                                window.location.href = '../home.jsp';
+                               document.cookie = username;
                             }
                             else {
                                 alert("The username already exists!")

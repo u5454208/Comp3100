@@ -87,6 +87,7 @@
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                  if (xmlhttp.getResponseHeader('result')=="Pass"){
                            window.location.href = '../home.jsp';
+                           document.cookie = "admin";
                         }
                         else {
                             alert("Wrong username or password!")
