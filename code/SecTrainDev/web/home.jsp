@@ -30,15 +30,17 @@
         </li>
         <li><a href="home.jsp" class="w3-padding-large w3-white">Home</a></li>
         <li class="w3-hide-small"><a href="material.jsp" class="w3-padding-large w3-hover-white">Learning Material</a></li>
-        <li class="w3-hide-small"><a href="VMControl.jsp" class="w3-padding-large w3-hover-white">Start Pen-testing</a></li>
+        <li class="w3-hide-small"><a href="pages/individual_session.jsp" class="w3-padding-large w3-hover-white">Start Pen-testing</a></li>
+        <li class="w3-hide-small"><a href="pages/token_submit.jsp" class="w3-padding-large w3-hover-white">Submit your token</a></li>
         <li class="w3-hide-small w3-right"><a href="index.jsp" class="w3-padding-large w3-hover-white">Log out</a></li>
     </ul>
 
     <!-- Navbar on small screens -->
     <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
         <ul class="w3-navbar w3-left-align w3-large w3-black">
-            <li><a class="w3-padding-large" href="material.jsp.jsp">Learning Material</a></li>
-            <li><a class="w3-padding-large" href="VMControl.jsp">Start Pen-testing</a></li>
+            <li><a class="w3-padding-large" href="material.jsp">Learning Material</a></li>
+            <li><a class="w3-padding-large" href="pages/individual_session.jsp">Start Pen-testing</a></li>
+            <li><a class="w3-padding-large" href="pages/token_submit.jsp">Submit your token</a></li>
             <li><a class="w3-padding-large w3-right" href="index.jsp">Log out</a></li>
         </ul>
     </div>
@@ -50,7 +52,7 @@
     <button class="w3-btn w3-padding-16 w3-large w3-margin-top"
             onclick="window.location.href='material.jsp'">Start Learning</button>
     <button class="w3-btn w3-padding-16 w3-large w3-margin-top"
-            onclick="window.location.href='VMControl.jsp'">Start Pen-testing</button>
+            onclick="window.location.href='pages/individual_session.jsp'">Start Pen-testing</button>
 </header>
 
 <script>

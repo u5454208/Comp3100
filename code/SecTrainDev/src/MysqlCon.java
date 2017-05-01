@@ -39,7 +39,7 @@ public class MysqlCon extends HttpServlet {
         {
             String token = request.getParameter("token");
             out= response.getWriter();
-            new MysqlCon().grade(token, response);
+            new MysqlCon().grade(username,token, response);
         }
         else
         {
@@ -119,10 +119,11 @@ public class MysqlCon extends HttpServlet {
     }
 
     //Code for the grading function
-    public void grade(String token, HttpServletResponse response) {
+    public void grade(String username, String token, HttpServletResponse response) {
         try {
             // use jdbc too
             System.out.println(token);
+            System.out.println(username);
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/account", "root", "1234567890");
@@ -132,7 +133,7 @@ public class MysqlCon extends HttpServlet {
             if (rs.next()) {
                 System.out.println("5");
                 response.addHeader("result", "5");
-                stmt.executeUpdate("INSERT INTO usergrade VALUES ('" + username + "','" + password + "')");
+                stmt.executeUpdate("UPDATE usergrade SET score = score + 5 WHERE username = '"+username+"'");
             }else {
                 System.out.println("0");
                 response.addHeader("result", "0");
