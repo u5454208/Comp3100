@@ -43,10 +43,11 @@ var ID=new Array();
                 alert("running!");
                 ID.push(xmlhttp.getResponseHeader('ID'));
                 //alert(xmlhttp.getAllResponseHeaders());
-                alert("waiting for tomcat");
+                alert("waiting for publicDNS");
                 function open()
                 {
-                	    window.open('http://'+xmlhttp.getResponseHeader('publicDNS')+':8080/webbank');
+                	    window.open(window.location.href.split("/")[0]+"//"+window.location.href.split("/")[2]+window.location.href.split("/")[3]+"/pages/individual_session.html?publicDNS="+xmlhttp.getResponseHeader('publicDNS'));
+                	    //window.open('http://'+xmlhttp.getResponseHeader('publicDNS')+':8080/webbank');
                 	}
                 setTimeout(open, 100000);
                 function stop() {
