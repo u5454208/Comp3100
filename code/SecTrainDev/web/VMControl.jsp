@@ -120,12 +120,6 @@ var ID=new Array();
         </button>
     </form>
     <form>
-                     <p>Token: <input type="text" name="Token" id="3"/></p>
-        <button class="w3-btn w3-padding-16 w3-large w3-margin-top"
-                onclick="grade()" value="grade" type="button">grading
-        </button>
-    </form>
-    <form>
         <button class="w3-btn w3-padding-16 w3-large w3-margin-top" id="2"
                 onclick="Function2()" value="stop" type="button">Stop App
         </button>
