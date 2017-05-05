@@ -79,7 +79,7 @@
             alert("The second password is not the same as the first one");
         }
         else{
-            xmlhttp.open("POST", "/MysqlCon", true);
+            xmlhttp.open("POST", "../MysqlCon", true);
             xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xmlhttp.send("method=signup&username=" + username + "&password=" + password );
             xmlhttp.onreadystatechange = function () {
