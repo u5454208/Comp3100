@@ -6,12 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="5d0e0d12-ec69-4f33-9a17-53f95e65c7e4" name="Default" comment="update new .war">
+    <list default="true" readonly="true" id="5d0e0d12-ec69-4f33-9a17-53f95e65c7e4" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SecTrainDev_war_exploded/SecTrainDev_war exploded.war" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SecTrainDev/StartApp.class" afterPath="$PROJECT_DIR$/out/production/SecTrainDev/StartApp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/login.jsp" afterPath="$PROJECT_DIR$/web/pages/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/sign_up.jsp" afterPath="$PROJECT_DIR$/web/pages/sign_up.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/VMControl.jsp" afterPath="$PROJECT_DIR$/web/VMControl.jsp" />
     </list>
     <ignored path="SecTrainDev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -161,11 +159,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VMControl.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VMControl.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/VMControl.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="48" column="102" lean-forward="false" selection-start-line="48" selection-start-column="102" selection-end-line="48" selection-end-column="102" />
+            <state relative-caret-position="184">
+              <caret line="49" column="104" lean-forward="true" selection-start-line="49" selection-start-column="104" selection-end-line="49" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -201,10 +199,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sign_up.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sign_up.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/sign_up.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
+            <state relative-caret-position="141">
               <caret line="81" column="36" lean-forward="false" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
               <folding />
             </state>
@@ -276,7 +274,6 @@
         <option value="$PROJECT_DIR$/web/pages/benefit.jsp" />
         <option value="$PROJECT_DIR$/web/pages/about_us.jsp" />
         <option value="$PROJECT_DIR$/src/DatabaseManager.java" />
-        <option value="$PROJECT_DIR$/web/VMControl.jsp" />
         <option value="dbtable:/a542a588/8f8ade45-f349-4d96-adfc-9292414dff15/account.usergrade" />
         <option value="dbtable:/a542a588/8f8ade45-f349-4d96-adfc-9292414dff15/account.userinfo" />
         <option value="$PROJECT_DIR$/src/Test.java" />
@@ -290,6 +287,7 @@
         <option value="$PROJECT_DIR$/web/home.jsp" />
         <option value="$PROJECT_DIR$/web/pages/login.jsp" />
         <option value="$PROJECT_DIR$/web/pages/sign_up.jsp" />
+        <option value="$PROJECT_DIR$/web/VMControl.jsp" />
       </list>
     </option>
   </component>
@@ -1258,7 +1256,7 @@
       <workItem from="1493902665642" duration="731000" />
       <workItem from="1493903904290" duration="11000" />
       <workItem from="1493966176563" duration="202000" />
-      <workItem from="1493966529798" duration="1659000" />
+      <workItem from="1493966529798" duration="2168000" />
     </task>
     <task id="LOCAL-00001" summary="remove something">
       <created>1477034616691</created>
@@ -1407,11 +1405,18 @@
       <option name="project" value="LOCAL" />
       <updated>1493967965446</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="update new .war">
+      <created>1493968516006</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1493968516006</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118264000" />
+    <option name="totallyTimeSpent" value="118773000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1437,17 +1442,17 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2494465" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39821884" sideWeight="0.70436066" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.40076336" sideWeight="0.70436066" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.49483013" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.4911374" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.49741316" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31806615" sideWeight="0.7191427" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31806615" sideWeight="0.7191427" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.4593796" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.49741316" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18994826" sideWeight="0.60692215" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18994826" sideWeight="0.60692215" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18038654" sideWeight="0.39307788" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.4911374" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1732,14 +1737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/VMControl.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="48" column="102" lean-forward="false" selection-start-line="48" selection-start-column="102" selection-end-line="48" selection-end-column="102" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/individual_session.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1545">
@@ -1790,8 +1787,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/sign_up.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
+        <state relative-caret-position="141">
           <caret line="81" column="36" lean-forward="false" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/VMControl.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="49" column="104" lean-forward="true" selection-start-line="49" selection-start-column="104" selection-end-line="49" selection-end-column="104" />
           <folding />
         </state>
       </provider>
