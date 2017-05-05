@@ -52,7 +52,7 @@
     <button class="w3-btn w3-padding-16 w3-large w3-margin-top"
             onclick="window.location.href='material.jsp'">Start Learning</button>
     <button class="w3-btn w3-padding-16 w3-large w3-margin-top"
-            onclick="window.location.href='pages/individual_session.jsp'">Start Pen-testing</button>
+            onclick="window.location.href='VMControl.jsp'">Start Pen-testing</button>
 </header>
 
 <script>
