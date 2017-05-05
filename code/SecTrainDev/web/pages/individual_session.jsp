@@ -79,7 +79,7 @@
         }
         var Selection = document.getElementById("1").value;
         Selection = encodeURI(encodeURI(Selection));
-        xmlhttp.open("POST", "/Selection", true);
+        xmlhttp.open("POST", "../Selection", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xmlhttp.send("Selection=" + Selection + "&publicDNS="+ window.location.href.split("?")[1].split("=")[1]);
         xmlhttp.onreadystatechange = function () {
