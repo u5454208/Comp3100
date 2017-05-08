@@ -77,7 +77,7 @@
         else {// code for IE6, IE5
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
-        var Selection = document.getElementById("1").value;
+        var Selection = "webbank";
         Selection = encodeURI(encodeURI(Selection));
         xmlhttp.open("POST", "../Selection", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
