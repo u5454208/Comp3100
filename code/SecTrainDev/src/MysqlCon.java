@@ -38,6 +38,7 @@ public class MysqlCon extends HttpServlet {
         if(method.equals("grade"))
         {
             String token = request.getParameter("token");
+            String username = request.getParameter("username");
             out= response.getWriter();
             new MysqlCon().grade(username,token, response);
         }
