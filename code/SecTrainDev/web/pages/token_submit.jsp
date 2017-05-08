@@ -38,7 +38,7 @@
             <a class="w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()"
                title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         </li>
-        <li><a href="home.jsp" class="w3-padding-large w3-white">Home</a></li>
+        <li><a href="../home.jsp" class="w3-padding-large w3-white">Home</a></li>
         <li class="w3-hide-small"><a href="../material.jsp" class="w3-padding-large w3-hover-white">Learning Material</a></li>
         <li class="w3-hide-small"><a href="../VMControl.jsp" class="w3-padding-large w3-hover-white">Start Pen-testing</a></li>
         <li class="w3-hide-small"><a href="token_submit.jsp" class="w3-padding-large w3-hover-white">Submit your token</a></li>
