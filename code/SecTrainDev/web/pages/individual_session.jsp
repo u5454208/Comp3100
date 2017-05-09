@@ -81,7 +81,7 @@
         Selection = encodeURI(encodeURI(Selection));
         xmlhttp.open("POST", "../Selection", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xmlhttp.send("Selection=" + Selection + "&publicDNS="+ window.location.href.split("?")[1].split("=")[1]);
+        xmlhttp.send("selection=" + Selection + "&publicDNS="+ window.location.href.split("?")[1].split("=")[1]);
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                     window.open('http://'+xmlhttp.getResponseHeader('publicDNS')+':8080/webbank');
