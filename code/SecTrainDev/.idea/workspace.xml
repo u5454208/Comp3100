@@ -9,9 +9,6 @@
     <list default="true" readonly="true" id="5d0e0d12-ec69-4f33-9a17-53f95e65c7e4" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SecTrainDev_war_exploded/SecTrainDev_war exploded.war" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/individual_session.jsp" afterPath="$PROJECT_DIR$/web/pages/individual_session.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/login.jsp" afterPath="$PROJECT_DIR$/web/pages/login.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/sign_up.jsp" afterPath="$PROJECT_DIR$/web/pages/sign_up.jsp" />
     </list>
     <ignored path="SecTrainDev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -141,7 +138,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="individual_session.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="individual_session.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/individual_session.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="145">
@@ -151,13 +148,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Selection.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Selection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Selection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-196">
+            <state relative-caret-position="-569">
               <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
               <folding>
-                <marker date="1494241293000" expanded="true" signature="3478:3610" ph="{...}" />
+                <marker date="1494301780000" expanded="true" signature="3482:3614" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -457,6 +454,10 @@
               <option name="myItemId" value="artifacts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SecTrainDev_war_exploded" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -504,8 +505,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/MysqlCon.java</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/Selection.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/web/pages/individual_session.jsp</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -1359,7 +1360,7 @@
       <workItem from="1493966176563" duration="202000" />
       <workItem from="1493966529798" duration="3223000" />
       <workItem from="1494166365091" duration="14000" />
-      <workItem from="1494241278231" duration="2957000" />
+      <workItem from="1494241278231" duration="3351000" />
     </task>
     <task id="LOCAL-00001" summary="remove something">
       <created>1477034616691</created>
@@ -1543,11 +1544,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494244634145</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="update new .war and modified the token_submit.jsp and VMControl.jsp">
+      <created>1494251529513</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1494251529513</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122799000" />
+    <option name="totallyTimeSpent" value="123193000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1924,21 +1932,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-196">
-          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <marker date="1494241293000" expanded="true" signature="3478:3610" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/individual_session.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="79" column="32" lean-forward="false" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-569">
+          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding>
+            <marker date="1494301780000" expanded="true" signature="3482:3614" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
