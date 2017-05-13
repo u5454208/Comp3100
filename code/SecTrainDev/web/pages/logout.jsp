@@ -50,23 +50,22 @@
 <script language="JavaScript">
     function logout() {
         var xmlhttp;
-        var ID = new Array();
+        var ID = getCookie('ID');
         if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
         }
         else {// code for IE6, IE5
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
-        if (getCookie('ID') == "") {
+        if (ID == "") {
             alert("Logout Successful!");
-            window.open(window.location.href + "../index.jsp");
+            window.open(window.location.href + "/../../index.jsp");
             window.close();
-
         }
         else {
-            var name = document.getElementById("2").value;
+            var name = "stop";
             name = encodeURI(encodeURI(name));
-            xmlhttp.open("POST", "StopApp", true);
+            xmlhttp.open("POST", "../StopApp", true);
             xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xmlhttp.send("name=" + ID);
             // alert(ID);
@@ -76,14 +75,16 @@
                     while (ID.length != 0) {
                         ID.pop();
                     }
-                    deleteCookie('ID');
-                    deleteCookie('publicDNS');
                 }
+                deleteCookie('ID');
+                deleteCookie('publicDNS');
+                alert("Logout Successful!");
+                window.open(window.location.href + "/../../index.jsp");
+                window.close();
             }
-            alert("Logout Successful!");
-            window.open(window.location.href + "../index.jsp");
-            window.close();
+
         }
+
     }
 
     function getCookie(cname) {
@@ -102,7 +103,7 @@
     }
     function deleteCookie(cname) {
         var d = new Date();
-        d.setTime(date.getTime()-1000);
+        d.setTime(Date.now()-1000);
         var expires = "expires="+d.toUTCString();
         document.cookie = cname + "=;" + expires + ";path=/";
     }
