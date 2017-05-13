@@ -129,6 +129,12 @@
             }
             return "";
         }
+        function deleteCookie(cname) {
+            var d = new Date();
+            d.setTime(date.getTime()-1000);
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=;" + expires + ";path=/";
+        }
     }
 </script>
 <body>
