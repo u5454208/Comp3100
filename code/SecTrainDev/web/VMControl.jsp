@@ -55,7 +55,7 @@
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                     alert("running!");
                     ID.push(xmlhttp.getResponseHeader('ID'));
-                    setCookie('ID', xmlhttp.getResponseHeader('publicDNS'), 0.5)
+                    setCookie('ID', xmlhttp.getResponseHeader('ID'), 0.5)
                     //alert(xmlhttp.getAllResponseHeaders());
                     alert("waiting for publicDNS");
                     function open() {

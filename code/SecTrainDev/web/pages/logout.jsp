@@ -63,28 +63,24 @@
             window.close();
         }
         else {
+            alert(ID);
             var name = "stop";
             name = encodeURI(encodeURI(name));
-            xmlhttp.open("POST", "../StopApp", true);
+            xmlhttp.open("POST", "/../StopApp", true);
             xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
             xmlhttp.send("name=" + ID);
             // alert(ID);
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                     alert("Stop app successful!");
-                    while (ID.length != 0) {
-                        ID.pop();
-                    }
+                    deleteCookie('ID');
+                    deleteCookie('publicDNS');
+                    alert("Logout Successful!");
+                    window.open(window.location.href + "/../../index.jsp");
+                    window.close();
                 }
-                deleteCookie('ID');
-                deleteCookie('publicDNS');
-                alert("Logout Successful!");
-                window.open(window.location.href + "/../../index.jsp");
-                window.close();
             }
-
         }
-
     }
 
     function getCookie(cname) {
