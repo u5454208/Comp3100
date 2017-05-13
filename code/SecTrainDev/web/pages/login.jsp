@@ -86,8 +86,9 @@
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                  if (xmlhttp.getResponseHeader('result')=="Pass"){
-                           document.cookie = "username=" + username + ";";
-                           alert("Login successful!")
+                           setCookie('User', username, 0.5);
+                           alert(document.cookie);
+                           alert("Login successful!");
                            window.location.href = '../home.jsp';
 
                         }
@@ -96,6 +97,12 @@
                         }
             }
         }
+    }
+    function setCookie(cname, cvalue, exdays) {
+        var d = new Date();
+        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+        var expires = "expires="+d.toUTCString();
+        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
     }
 </script>
 <script>

@@ -76,7 +76,8 @@
         else {// code for IE6, IE5
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
-        var username = getCookie("username");
+        var username = getCookie('User');
+        alert(username);
         var token = document.getElementById("3").value;
         xmlhttp.open("POST", "/MysqlCon", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");

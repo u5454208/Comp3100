@@ -85,8 +85,8 @@
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                      if (xmlhttp.getResponseHeader('result')=="Pass"){
-                               document.cookie = "username =" + username;
-                               alert("Sign up successful!")
+                               setCookie('User', username, 0.5);
+                               alert("Sign up successful!");
                                window.location.href = '../home.jsp';
                             }
                             else {
