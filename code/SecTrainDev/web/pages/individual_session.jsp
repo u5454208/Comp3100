@@ -48,7 +48,7 @@
             <li><a class="w3-padding-large" href="../material.jsp">Learning Material</a></li>
             <li><a class="w3-padding-large" href="individual_session.jsp">Start Pen-testing</a></li>
             <li><a class="w3-padding-large" href="token_submit.jsp">Submit your token</a></li>
-            <li><a class="w3-padding-large w3-right" href="../index.jsp">Log out</a></li>
+            <li><a class="w3-padding-large w3-right" href="logout.jsp">Log out</a></li>
         </ul>
     </div>
 </div>

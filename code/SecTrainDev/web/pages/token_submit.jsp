@@ -42,7 +42,7 @@
         <li class="w3-hide-small"><a href="../material.jsp" class="w3-padding-large w3-hover-white">Learning Material</a></li>
         <li class="w3-hide-small"><a href="../VMControl.jsp" class="w3-padding-large w3-hover-white">Start Pen-testing</a></li>
         <li class="w3-hide-small"><a href="token_submit.jsp" class="w3-padding-large w3-hover-white">Submit your token</a></li>
-        <li class="w3-hide-small w3-right"><a href="../index.jsp" class="w3-padding-large w3-hover-white">Log out</a></li>
+        <li class="w3-hide-small w3-right"><a href="logout.jsp" class="w3-padding-large w3-hover-white">Log out</a></li>
     </ul>
 
     <!-- Navbar on small screens -->
@@ -51,7 +51,7 @@
             <li><a class="w3-padding-large" href="../material.jsp">Learning Material</a></li>
             <li><a class="w3-padding-large" href="../VMControl.jsp">Start Pen-testing</a></li>
             <li><a class="w3-padding-large" href="token_submit.jsp">Submit your token</a></li>
-            <li><a class="w3-padding-large w3-right" href="../index.jsp">Log out</a></li>
+            <li><a class="w3-padding-large w3-right" href="logout.jsp">Log out</a></li>
         </ul>
     </div>
 </div>
