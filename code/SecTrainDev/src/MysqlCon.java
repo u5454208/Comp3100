@@ -148,7 +148,7 @@ public class MysqlCon extends HttpServlet {
     public void query(String username, HttpServletResponse response) {
         try {
             // use jdbc
-			  int flag = 0
+            int flag = 0;
             Class.forName("com.mysql.jdbc.Driver");
             Connection con = DriverManager.getConnection(
                     "jdbc:mysql://localhost:3306/account", "root", "1234567890");
@@ -157,18 +157,16 @@ public class MysqlCon extends HttpServlet {
             ResultSet rs = stmt.executeQuery("SELECT score FROM usergrade WHERE username = '" + username + "'");
             if (rs.next()) {
                 response.addHeader("grade", rs.getString(1));
-            }else {
+            } else {
                 response.addHeader("result", "0");
             }
-			 rs = stmt.executeQuery("SELECT challenge FROM challenge WHERE username = '" + username + "'");
-		while(rs.next()) {
+            rs = stmt.executeQuery("SELECT challenge FROM challenge WHERE username = '" + username + "'");
+            while (rs.next()) {
                 response.addHeader("Challenges", rs.getString(1));
-				  flag = 1;
-            	}
-				   if (flag == 0)
-					{
-                		response.addHeader("Challenges", "None");
-					}
+                flag = 1;
+            }
+            if (flag == 0) {
+                response.addHeader("Challenges", "None");
             }
             rs.close();
         } catch (Exception e) {

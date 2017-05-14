@@ -87,7 +87,7 @@
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                  if (xmlhttp.getResponseHeader('result')=="Pass"){
                            setCookie('User', username, 0.5);
-                           alert(document.cookie);
+                           //alert(document.cookie);
                            alert("Login successful!");
                            window.location.href = '../home.jsp';
 
