@@ -46,7 +46,7 @@ public class StopApp extends HttpServlet {
    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         AWSCredentials credentials = null;
         try {
-            credentials = new ProfileCredentialsProvider().getCredentials();
+            credentials = new ProfileCredentialsProvider().getCredentials();// set credential
         } catch (Exception e) {
             throw new AmazonClientException(
                     "Cannot load the credentials from the credential profiles file. " +
@@ -58,7 +58,7 @@ public class StopApp extends HttpServlet {
         this.ec2 = new AmazonEC2Client(credentials);
          Region usWest2 = Region.getRegion(Regions.US_WEST_2);
         this.ec2.setRegion(usWest2);
-        String name = request.getParameter("name");
+        String name = request.getParameter("name"); // get parameter from front end , to stop multiple instances
         int i=0,count=0;
         for(i=0;i<name.length();i++)
         {

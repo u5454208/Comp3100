@@ -37,23 +37,23 @@ public class StartApp extends HttpServlet
 	ArrayList<String> instanceIds;
 	AmazonEC2 ec2;
 
-	// 处理 GET 方法请求的方法
+	// deal with get request
 	public void init()
 	{
 		instanceIds=new ArrayList();
 	}
 		public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException
 		{
-			// 设置响应内容类型
+			// set the type of response
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out = response.getWriter();
-			String name = request.getParameter("name");
+			String name = request.getParameter("name"); // this is the parameter passed from front end
 			if(true)
 			{
 				out= response.getWriter();
 				 AWSCredentials credentials = null;
 			        try {
-			            credentials = new ProfileCredentialsProvider().getCredentials();
+			            credentials = new ProfileCredentialsProvider().getCredentials(); //set the credentials
 			        } catch (Exception e) {
 			            throw new AmazonClientException(
 			                    "Cannot load the credentials from the credential profiles file. " +
@@ -67,7 +67,7 @@ public class StartApp extends HttpServlet
 			        ec2.setRegion(usWest2);
 			        // Initializes Instance Request
 			        RunInstancesRequest runn = new RunInstancesRequest();
-			        runn.withImageId("ami-c0a53ea0")
+			        runn.withImageId("ami-c0a53ea0")  //using the ami we have already created in AWS 
 			                .withInstanceType("t2.micro")
 			                .withMinCount(1)
 			                .withMaxCount(1)
@@ -80,7 +80,7 @@ public class StartApp extends HttpServlet
 					//data0.setInstanceIds(this.instanceIds);
 					//data0.setPublicDNS(run.getReservation().getInstances().get(0).getInstanceId());
 					response.getWriter().print(result);
-					response.addHeader("ID", result);
+					response.addHeader("ID", result);//send ID to front end
 					try {
 							Thread.sleep(5000);
 						} catch (InterruptedException e) {
@@ -90,10 +90,10 @@ public class StartApp extends HttpServlet
 					DescribeInstancesRequest des=new DescribeInstancesRequest();
 					des.withInstanceIds(result);
 					DescribeInstancesResult dess=ec2.describeInstances(des);
-					response.addHeader("publicDNS", dess.getReservations().get(0).getInstances().get(0).getPublicDnsName());
+					response.addHeader("publicDNS", dess.getReservations().get(0).getInstances().get(0).getPublicDnsName());// send publicDNS to front end
 		    }
 		}
-		// 处理 POST 方法请求的方法
+		// deal with post request
 		public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 			doGet(request, response);
 		}
