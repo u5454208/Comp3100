@@ -26,8 +26,8 @@ import com.jcraft.jsch.*;
 
 public class Selection extends HttpServlet {
 
-		String keyfile = "/Users/lrz0927/Desktop/Comp3100/resource/COMP3100.pem"; //the private key file for SSH connection
-		//String keyfile = "/home/ec2-user/COMP3100.pem"; //the private key file for SSH connection
+		//String keyfile = "/Users/lrz0927/Desktop/Comp3100/resource/COMP3100.pem"; //the private key file for SSH connection
+		String keyfile = "/home/ec2-user/COMP3100.pem"; //the private key file for SSH connection
 		public void init()
 		{
 
