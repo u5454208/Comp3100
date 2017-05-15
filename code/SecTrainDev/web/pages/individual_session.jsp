@@ -37,8 +37,9 @@
         </li>
         <li><a href="../index.jsp" class="w3-padding-large w3-white">Home</a></li>
         <li class="w3-hide-small"><a href="../material.jsp" class="w3-padding-large w3-hover-white">Learning Material</a></li>
-        <li class="w3-hide-small"><a href="individual_session.jsp" class="w3-padding-large w3-hover-white">Start Pen-testing</a></li>
+        <li class="w3-hide-small"><a href="../VMControl.jsp" class="w3-padding-large w3-hover-white">Start Pen-testing</a></li>
         <li class="w3-hide-small"><a href="token_submit.jsp" class="w3-padding-large w3-hover-white">Submit your token</a></li>
+        <li class="w3-hide-small"><a href="report.jsp" class="w3-padding-large w3-hover-white">Get your report</a></li>
         <li class="w3-hide-small w3-right"><a href="../logout.jsp" class="w3-padding-large w3-hover-white">Log out</a></li>
     </ul>
 

@@ -10,6 +10,10 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SecTrainDev_war_exploded/SecTrainDev_war exploded.war" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/VMControl.jsp" afterPath="$PROJECT_DIR$/web/VMControl.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/material.jsp" afterPath="$PROJECT_DIR$/web/material.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/individual_session.jsp" afterPath="$PROJECT_DIR$/web/pages/individual_session.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/report.jsp" afterPath="$PROJECT_DIR$/web/pages/report.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/token_submit.jsp" afterPath="$PROJECT_DIR$/web/pages/token_submit.jsp" />
     </list>
     <ignored path="SecTrainDev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,11 +86,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VMControl.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VMControl.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/VMControl.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="91" column="18" lean-forward="true" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+            <state relative-caret-position="357">
+              <caret line="155" column="49" lean-forward="false" selection-start-line="155" selection-start-column="49" selection-end-line="155" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="report.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/pages/report.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="material.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/material.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -167,46 +191,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Selection.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Selection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <marker date="1494815704000" expanded="true" signature="3481:3613" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="individual_session.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/individual_session.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="645">
-              <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-              <folding>
-                <marker date="1494815704000" expanded="true" signature="3039:3883" ph="{...}" />
-                <marker date="1494815704000" expanded="true" signature="3701:3877" ph="{...}" />
-                <marker date="1494815704000" expanded="true" signature="3769:3867" ph="{...}" />
-                <marker date="1494815704000" expanded="true" signature="3910:4299" ph="{...}" />
-                <marker date="1494815704000" expanded="true" signature="4032:4274" ph="{...}" />
-                <marker date="1494815704000" expanded="true" signature="4100:4151" ph="{...}" />
-                <marker date="1494815704000" expanded="true" signature="4190:4264" ph="{...}" />
-                <marker date="1494815704000" expanded="true" signature="4317:4675" ph="..." />
-                <marker date="1494815704000" expanded="true" signature="4426:4666" ph="{...}" />
-                <marker date="1494815704000" expanded="true" signature="4530:4580" ph="{...}" />
-                <marker date="1494815704000" expanded="true" signature="4586:4660" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="sign_up.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/pages/sign_up.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1290">
-              <caret line="86" column="25" lean-forward="false" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
+            <state relative-caret-position="219">
+              <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -215,8 +204,8 @@
       <file leaf-file-name="token_submit.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/token_submit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
-              <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+            <state relative-caret-position="348">
+              <caret line="45" column="123" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="45" selection-end-column="123" />
               <folding />
             </state>
           </provider>
@@ -285,16 +274,17 @@
         <option value="dbtable:/a542a588/5fffcb1e-04bf-4b9e-b71d-e4fae32e61b1/account.token" />
         <option value="$PROJECT_DIR$/src/MysqlCon.java" />
         <option value="$PROJECT_DIR$/web/pages/sign_up.jsp" />
-        <option value="$PROJECT_DIR$/web/material.jsp" />
         <option value="$PROJECT_DIR$/web/home.jsp" />
         <option value="$PROJECT_DIR$/web/pages/logout.jsp" />
         <option value="dbtable:/a542a588/5fffcb1e-04bf-4b9e-b71d-e4fae32e61b1/account.chanllenge" />
         <option value="$PROJECT_DIR$/src/Selection.java" />
         <option value="$PROJECT_DIR$/web/pages/login.jsp" />
+        <option value="$PROJECT_DIR$/web/logout.jsp" />
         <option value="$PROJECT_DIR$/web/pages/token_submit.jsp" />
         <option value="$PROJECT_DIR$/web/pages/individual_session.jsp" />
-        <option value="$PROJECT_DIR$/web/logout.jsp" />
+        <option value="$PROJECT_DIR$/web/material.jsp" />
         <option value="$PROJECT_DIR$/web/VMControl.jsp" />
+        <option value="$PROJECT_DIR$/web/pages/report.jsp" />
       </list>
     </option>
   </component>
@@ -1384,7 +1374,7 @@
       <workItem from="1494677840863" duration="8654000" />
       <workItem from="1494763138463" duration="2596000" />
       <workItem from="1494766054660" duration="2536000" />
-      <workItem from="1494815698509" duration="1273000" />
+      <workItem from="1494815698509" duration="1776000" />
     </task>
     <task id="LOCAL-00001" summary="remove something">
       <created>1477034616691</created>
@@ -1687,11 +1677,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494815737916</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="update the VMControl.jsp">
+      <created>1494817903308</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1494817903308</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141916000" />
+    <option name="totallyTimeSpent" value="142419000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1704,6 +1701,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="43" y="22" width="1395" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1725,9 +1723,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.49741316" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31170484" sideWeight="0.7191427" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32824427" sideWeight="0.4593796" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.4593796" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.49741316" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.218034" sideWeight="0.60692215" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18551368" sideWeight="0.60692215" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18038654" sideWeight="0.39307788" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1817,7 +1815,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="delete data.java" />
     <MESSAGE value="Modify MysqlCon.java and add connecter.jar to Web-info/lib" />
     <MESSAGE value="add the function to test the token" />
     <MESSAGE value="add the user interface to test the token" />
@@ -1842,7 +1839,8 @@
     <MESSAGE value="build online version of .war and a series of update" />
     <MESSAGE value="build online version of .war and update logout.jsp" />
     <MESSAGE value="build online version of .war" />
-    <option name="LAST_COMMIT_MESSAGE" value="build online version of .war" />
+    <MESSAGE value="update the VMControl.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="update the VMControl.jsp" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1955,14 +1953,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/material.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="40" column="75" lean-forward="false" selection-start-line="40" selection-start-column="75" selection-end-line="40" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/about_us.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1982,14 +1972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/report.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2037,34 +2019,6 @@
             <element signature="imports" expanded="false" />
             <marker date="1494815704000" expanded="true" signature="3481:3613" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/individual_session.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding>
-            <marker date="1494815704000" expanded="true" signature="3039:3883" ph="{...}" />
-            <marker date="1494815704000" expanded="true" signature="3701:3877" ph="{...}" />
-            <marker date="1494815704000" expanded="true" signature="3769:3867" ph="{...}" />
-            <marker date="1494815704000" expanded="true" signature="3910:4299" ph="{...}" />
-            <marker date="1494815704000" expanded="true" signature="4032:4274" ph="{...}" />
-            <marker date="1494815704000" expanded="true" signature="4100:4151" ph="{...}" />
-            <marker date="1494815704000" expanded="true" signature="4190:4264" ph="{...}" />
-            <marker date="1494815704000" expanded="true" signature="4317:4675" ph="..." />
-            <marker date="1494815704000" expanded="true" signature="4426:4666" ph="{...}" />
-            <marker date="1494815704000" expanded="true" signature="4530:4580" ph="{...}" />
-            <marker date="1494815704000" expanded="true" signature="4586:4660" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/token_submit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" column="43" lean-forward="false" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2146,10 +2100,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/material.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="49" lean-forward="false" selection-start-line="34" selection-start-column="49" selection-end-line="34" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/VMControl.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="91" column="18" lean-forward="true" selection-start-line="91" selection-start-column="18" selection-end-line="91" selection-end-column="18" />
+        <state relative-caret-position="357">
+          <caret line="155" column="49" lean-forward="false" selection-start-line="155" selection-start-column="49" selection-end-line="155" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/individual_session.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="43" column="9" lean-forward="true" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/token_submit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="45" column="123" lean-forward="true" selection-start-line="40" selection-start-column="8" selection-end-line="45" selection-end-column="123" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/report.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>

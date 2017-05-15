@@ -64,7 +64,7 @@
                         //window.open('http://'+xmlhttp.getResponseHeader('publicDNS')+':8080/webbank');
                     }
 
-                    setTimeout(open, 200000);
+                    setTimeout(open, 100000);
                     function stop() {
                         $().ready(function () {
                             $('#2').trigger("click");
@@ -153,6 +153,7 @@
         </li>
         <li class="w3-hide-small"><a href="pages/token_submit.jsp" class="w3-padding-large w3-hover-white">Submit your
             token</a></li>
+        <li class="w3-hide-small"><a href="pages/report.jsp" class="w3-padding-large w3-hover-white">Get your report</a></li>
         <li class="w3-hide-small w3-right"><a href="logout.jsp" class="w3-padding-large w3-hover-white">Log out</a></li>
     </ul>
 
