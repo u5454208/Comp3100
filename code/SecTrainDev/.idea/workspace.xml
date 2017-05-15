@@ -6,10 +6,11 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="5d0e0d12-ec69-4f33-9a17-53f95e65c7e4" name="Default" comment="build online version of .war">
+    <list default="true" readonly="true" id="5d0e0d12-ec69-4f33-9a17-53f95e65c7e4" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SecTrainDev_war_exploded/SecTrainDev_war exploded.war" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/SecTrainDev/StartApp.class" afterPath="$PROJECT_DIR$/out/production/SecTrainDev/StartApp.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/pages/login.jsp" afterPath="$PROJECT_DIR$/web/pages/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/VMControl.jsp" afterPath="$PROJECT_DIR$/web/VMControl.jsp" />
     </list>
     <ignored path="SecTrainDev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,11 +123,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="VMControl.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="VMControl.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/VMControl.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-442">
-              <caret line="55" column="38" lean-forward="false" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
+            <state relative-caret-position="81">
+              <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -135,21 +136,23 @@
       <file leaf-file-name="MysqlCon.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MysqlCon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
+            <state relative-caret-position="-65">
               <caret line="139" column="50" lean-forward="false" selection-start-line="139" selection-start-column="50" selection-end-line="139" selection-end-column="50" />
               <folding>
-                <marker date="1494241293000" expanded="true" signature="2536:2601" ph="SELECT usern... userinfo" />
-                <marker date="1494241293000" expanded="true" signature="2670:2737" ph="INSERT INTO userinfo... " />
-                <marker date="1494241293000" expanded="true" signature="2777:2830" ph="INSERT INTO usergrade... " />
-                <marker date="1494241293000" expanded="true" signature="3793:3858" ph="SELECT passw... userinfo" />
-                <marker date="1494241293000" expanded="true" signature="5085:5138" ph="SELECT score... token" />
-                <marker date="1494241293000" expanded="true" signature="5299:5316" ph="UPDATE userg... " />
-                <marker date="1494241293000" expanded="true" signature="5299:5356" ph="UPDATE userg... " />
-                <marker date="1494241293000" expanded="true" signature="5299:5367" ph="UPDATE userg... " />
-                <marker date="1494241293000" expanded="true" signature="5299:5368" ph="UPDATE userg... " />
-                <marker date="1494241293000" expanded="true" signature="5299:5369" ph="UPDATE userg... " />
-                <marker date="1494241293000" expanded="true" signature="5299:5371" ph="UPDATE userg... " />
-                <marker date="1494241293000" expanded="true" signature="5305:5316" ph="INSERT INTO usergrade... " />
+                <marker date="1494811060000" expanded="true" signature="2536:2601" ph="SELECT usern... userinfo" />
+                <marker date="1494811060000" expanded="true" signature="2670:2737" ph="INSERT INTO userinfo... " />
+                <marker date="1494811060000" expanded="true" signature="2777:2830" ph="INSERT INTO usergrade... " />
+                <marker date="1494811060000" expanded="true" signature="3793:3858" ph="SELECT passw... userinfo" />
+                <marker date="1494811060000" expanded="true" signature="5085:5138" ph="SELECT score... token" />
+                <marker date="1494811060000" expanded="true" signature="5299:5316" ph="UPDATE userg... " />
+                <marker date="1494811060000" expanded="true" signature="5299:5356" ph="UPDATE userg... " />
+                <marker date="1494811060000" expanded="true" signature="5299:5367" ph="UPDATE userg... " />
+                <marker date="1494811060000" expanded="true" signature="5299:5368" ph="UPDATE userg... " />
+                <marker date="1494811060000" expanded="true" signature="5299:5369" ph="UPDATE userg... " />
+                <marker date="1494811060000" expanded="true" signature="5299:5371" ph="UPDATE userg... " />
+                <marker date="1494811060000" expanded="true" signature="5305:5316" ph="INSERT INTO usergrade... " />
+                <marker date="1494811060000" expanded="true" signature="6108:6171" ph="SELECT score... usergrade" />
+                <marker date="1494811060000" expanded="true" signature="6388:6455" ph="SELECT chall... challenge" />
               </folding>
             </state>
           </provider>
@@ -160,7 +163,21 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="587">
               <caret line="74" column="50" lean-forward="false" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
-              <folding />
+              <folding>
+                <marker date="1494811060000" expanded="true" signature="1566:2843" ph="{...}" />
+                <marker date="1494811060000" expanded="true" signature="2053:2837" ph="{...}" />
+                <marker date="1494811060000" expanded="true" signature="2423:2827" ph="{...}" />
+                <marker date="1494811060000" expanded="true" signature="2495:2813" ph="{...}" />
+                <marker date="1494811060000" expanded="true" signature="2875:3264" ph="{...}" />
+                <marker date="1494811060000" expanded="true" signature="2997:3239" ph="{...}" />
+                <marker date="1494811060000" expanded="true" signature="3065:3116" ph="{...}" />
+                <marker date="1494811060000" expanded="true" signature="3155:3229" ph="{...}" />
+                <marker date="1494811060000" expanded="true" signature="3298:3481" ph="{...}" />
+                <marker date="1494811060000" expanded="true" signature="3501:3859" ph="..." />
+                <marker date="1494811060000" expanded="true" signature="3610:3850" ph="{...}" />
+                <marker date="1494811060000" expanded="true" signature="3714:3764" ph="{...}" />
+                <marker date="1494811060000" expanded="true" signature="3770:3844" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -198,7 +215,7 @@
       <file leaf-file-name="Selection.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Selection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="-570">
               <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
               <folding>
                 <marker date="1494810945000" expanded="true" signature="3482:3614" ph="{...}" />
@@ -232,11 +249,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="token_submit.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="token_submit.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/token_submit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-157">
-              <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+            <state relative-caret-position="573">
+              <caret line="73" column="43" lean-forward="true" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -306,14 +323,14 @@
         <option value="$PROJECT_DIR$/src/MysqlCon.java" />
         <option value="$PROJECT_DIR$/web/pages/sign_up.jsp" />
         <option value="$PROJECT_DIR$/web/pages/individual_session.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/token_submit.jsp" />
         <option value="$PROJECT_DIR$/web/material.jsp" />
         <option value="$PROJECT_DIR$/web/home.jsp" />
-        <option value="$PROJECT_DIR$/web/VMControl.jsp" />
         <option value="$PROJECT_DIR$/web/pages/logout.jsp" />
         <option value="dbtable:/a542a588/5fffcb1e-04bf-4b9e-b71d-e4fae32e61b1/account.chanllenge" />
         <option value="$PROJECT_DIR$/src/Selection.java" />
         <option value="$PROJECT_DIR$/web/pages/login.jsp" />
+        <option value="$PROJECT_DIR$/web/pages/token_submit.jsp" />
+        <option value="$PROJECT_DIR$/web/VMControl.jsp" />
       </list>
     </option>
   </component>
@@ -1291,7 +1308,7 @@
       <workItem from="1494643449006" duration="17000" />
       <workItem from="1494677840863" duration="8654000" />
       <workItem from="1494763138463" duration="2596000" />
-      <workItem from="1494766054660" duration="428000" />
+      <workItem from="1494766054660" duration="849000" />
     </task>
     <task id="LOCAL-00001" summary="remove something">
       <created>1477034616691</created>
@@ -1545,11 +1562,25 @@
       <option name="project" value="LOCAL" />
       <updated>1494763248472</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="build online version of .war and comment the debug function">
+      <created>1494811049524</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1494811049524</updated>
+    </task>
+    <task id="LOCAL-00038" summary="build online version of .war">
+      <created>1494811210470</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1494811210470</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138535000" />
+    <option name="totallyTimeSpent" value="138956000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1561,7 +1592,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="22" width="1395" height="878" extended-state="6" />
+    <frame x="43" y="22" width="1395" height="878" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1583,7 +1614,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.49741316" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31170484" sideWeight="0.7191427" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.4593796" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32824427" sideWeight="0.4593796" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.49741316" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21507761" sideWeight="0.60692215" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18038654" sideWeight="0.39307788" order="2" side_tool="true" content_ui="tabs" />
@@ -1675,7 +1706,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add Mysql connection" />
     <MESSAGE value="Add Mysql sign up function" />
     <MESSAGE value="Add Mysql login function" />
     <MESSAGE value="update Mysql sign up function" />
@@ -1699,6 +1729,7 @@
     <MESSAGE value="recover deleteCookie() to VMControl.jsp" />
     <MESSAGE value="add logout() to logout.jsp" />
     <MESSAGE value="update logout() and deleteCookie()" />
+    <MESSAGE value="build online version of .war and comment the debug function" />
     <MESSAGE value="build online version of .war" />
     <option name="LAST_COMMIT_MESSAGE" value="build online version of .war" />
   </component>
@@ -1896,27 +1927,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MysqlCon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="139" column="50" lean-forward="false" selection-start-line="139" selection-start-column="50" selection-end-line="139" selection-end-column="50" />
-          <folding>
-            <marker date="1494241293000" expanded="true" signature="2536:2601" ph="SELECT usern... userinfo" />
-            <marker date="1494241293000" expanded="true" signature="2670:2737" ph="INSERT INTO userinfo... " />
-            <marker date="1494241293000" expanded="true" signature="2777:2830" ph="INSERT INTO usergrade... " />
-            <marker date="1494241293000" expanded="true" signature="3793:3858" ph="SELECT passw... userinfo" />
-            <marker date="1494241293000" expanded="true" signature="5085:5138" ph="SELECT score... token" />
-            <marker date="1494241293000" expanded="true" signature="5299:5316" ph="UPDATE userg... " />
-            <marker date="1494241293000" expanded="true" signature="5299:5356" ph="UPDATE userg... " />
-            <marker date="1494241293000" expanded="true" signature="5299:5367" ph="UPDATE userg... " />
-            <marker date="1494241293000" expanded="true" signature="5299:5368" ph="UPDATE userg... " />
-            <marker date="1494241293000" expanded="true" signature="5299:5369" ph="UPDATE userg... " />
-            <marker date="1494241293000" expanded="true" signature="5299:5371" ph="UPDATE userg... " />
-            <marker date="1494241293000" expanded="true" signature="5305:5316" ph="INSERT INTO usergrade... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/home.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1933,29 +1943,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding>
-            <marker date="1494810945000" expanded="true" signature="3482:3614" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/VMControl.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="55" column="38" lean-forward="false" selection-start-line="55" selection-start-column="38" selection-end-line="55" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/logout.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="587">
           <caret line="74" column="50" lean-forward="false" selection-start-line="74" selection-start-column="50" selection-end-line="74" selection-end-column="50" />
-          <folding />
+          <folding>
+            <marker date="1494811060000" expanded="true" signature="1566:2843" ph="{...}" />
+            <marker date="1494811060000" expanded="true" signature="2053:2837" ph="{...}" />
+            <marker date="1494811060000" expanded="true" signature="2423:2827" ph="{...}" />
+            <marker date="1494811060000" expanded="true" signature="2495:2813" ph="{...}" />
+            <marker date="1494811060000" expanded="true" signature="2875:3264" ph="{...}" />
+            <marker date="1494811060000" expanded="true" signature="2997:3239" ph="{...}" />
+            <marker date="1494811060000" expanded="true" signature="3065:3116" ph="{...}" />
+            <marker date="1494811060000" expanded="true" signature="3155:3229" ph="{...}" />
+            <marker date="1494811060000" expanded="true" signature="3298:3481" ph="{...}" />
+            <marker date="1494811060000" expanded="true" signature="3501:3859" ph="..." />
+            <marker date="1494811060000" expanded="true" signature="3610:3850" ph="{...}" />
+            <marker date="1494811060000" expanded="true" signature="3714:3764" ph="{...}" />
+            <marker date="1494811060000" expanded="true" signature="3770:3844" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1977,8 +1983,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/token_submit.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-157">
-          <caret line="44" column="56" lean-forward="false" selection-start-line="44" selection-start-column="56" selection-end-line="44" selection-end-column="56" />
+        <state relative-caret-position="573">
+          <caret line="73" column="43" lean-forward="true" selection-start-line="73" selection-start-column="43" selection-end-line="73" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MysqlCon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-65">
+          <caret line="139" column="50" lean-forward="false" selection-start-line="139" selection-start-column="50" selection-end-line="139" selection-end-column="50" />
+          <folding>
+            <marker date="1494811060000" expanded="true" signature="2536:2601" ph="SELECT usern... userinfo" />
+            <marker date="1494811060000" expanded="true" signature="2670:2737" ph="INSERT INTO userinfo... " />
+            <marker date="1494811060000" expanded="true" signature="2777:2830" ph="INSERT INTO usergrade... " />
+            <marker date="1494811060000" expanded="true" signature="3793:3858" ph="SELECT passw... userinfo" />
+            <marker date="1494811060000" expanded="true" signature="5085:5138" ph="SELECT score... token" />
+            <marker date="1494811060000" expanded="true" signature="5299:5316" ph="UPDATE userg... " />
+            <marker date="1494811060000" expanded="true" signature="5299:5356" ph="UPDATE userg... " />
+            <marker date="1494811060000" expanded="true" signature="5299:5367" ph="UPDATE userg... " />
+            <marker date="1494811060000" expanded="true" signature="5299:5368" ph="UPDATE userg... " />
+            <marker date="1494811060000" expanded="true" signature="5299:5369" ph="UPDATE userg... " />
+            <marker date="1494811060000" expanded="true" signature="5299:5371" ph="UPDATE userg... " />
+            <marker date="1494811060000" expanded="true" signature="5305:5316" ph="INSERT INTO usergrade... " />
+            <marker date="1494811060000" expanded="true" signature="6108:6171" ph="SELECT score... usergrade" />
+            <marker date="1494811060000" expanded="true" signature="6388:6455" ph="SELECT chall... challenge" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570">
+          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
+          <folding>
+            <marker date="1494810945000" expanded="true" signature="3482:3614" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/VMControl.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="78" column="5" lean-forward="true" selection-start-line="78" selection-start-column="5" selection-end-line="78" selection-end-column="5" />
           <folding />
         </state>
       </provider>
