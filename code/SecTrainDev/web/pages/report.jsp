@@ -61,7 +61,7 @@
 <div class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-twothird">
-            <h1>About us</h1>
+            <h1>Details</h1>
             <h5 class="w3-padding-32" id="user"></h5>
             <h5 class="w3-padding-32" id="grade"></h5>
             <h5 class="w3-padding-32" id="challenges"></h5>

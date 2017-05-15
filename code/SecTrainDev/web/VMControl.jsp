@@ -77,65 +77,65 @@
             }
         }
     }
-    function Function2() {
-        var xmlhttp;
-        var ID = new Array();
-        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
-            xmlhttp = new XMLHttpRequest();
-        }
-        else {// code for IE6, IE5
-            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        if (getCookie('ID') == "") {
-            alert("No machine running now!")
-        }
-        else {
-            var name = document.getElementById("2").value;
-            name = encodeURI(encodeURI(name));
-            xmlhttp.open("POST", "StopApp", true);
-            xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-            xmlhttp.send("name=" + ID);
-            // alert(ID);
-            xmlhttp.onreadystatechange = function () {
-                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                    alert("Stop app successful!");
-                    while (ID.length != 0) {
-                        ID.pop();
+        function Function2() {
+            var xmlhttp;
+            var ID = new Array();
+            if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+                xmlhttp = new XMLHttpRequest();
+            }
+            else {// code for IE6, IE5
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+            if (getCookie('ID') == "") {
+                alert("No machine running now!")
+            }
+            else {
+                var name = document.getElementById("2").value;
+                name = encodeURI(encodeURI(name));
+                xmlhttp.open("POST", "StopApp", true);
+                xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+                xmlhttp.send("name=" + ID);
+                // alert(ID);
+                xmlhttp.onreadystatechange = function () {
+                    if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                        alert("Stop app successful!");
+                        while (ID.length != 0) {
+                            ID.pop();
+                        }
+                        deleteCookie('ID');
+                        deleteCookie('publicDNS');
                     }
-                    deleteCookie('ID');
-                    deleteCookie('publicDNS');
                 }
             }
         }
-    }
 
-    function setCookie(cname, cvalue, exdays) {
-        var d = new Date();
-        d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
-        var expires = "expires=" + d.toUTCString();
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
-    }
-
-    function getCookie(cname) {
-        var name = cname + "=";
-        var ca = document.cookie.split(';');
-        for (var i = 0; i < ca.length; i++) {
-            var c = ca[i];
-            while (c.charAt(0) == ' ') {
-                c = c.substring(1);
-            }
-            if (c.indexOf(name) == 0) {
-                return c.substring(name.length, c.length);
-            }
+        function setCookie(cname, cvalue, exdays) {
+            var d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            var expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
         }
-        return "";
-    }
-    function deleteCookie(cname) {
-        var d = new Date();
-        d.setTime(Date.now()-1000);
-        var expires = "expires="+d.toUTCString();
-        document.cookie = cname + "=;" + expires + ";path=/";
-    }
+
+        function getCookie(cname) {
+            var name = cname + "=";
+            var ca = document.cookie.split(';');
+            for (var i = 0; i < ca.length; i++) {
+                var c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+        function deleteCookie(cname) {
+            var d = new Date();
+            d.setTime(Date.now()-1000);
+            var expires = "expires="+d.toUTCString();
+            document.cookie = cname + "=;" + expires + ";path=/";
+        }
 </script>
 <body>
 
