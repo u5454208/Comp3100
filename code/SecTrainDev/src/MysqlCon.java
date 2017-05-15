@@ -42,6 +42,12 @@ public class MysqlCon extends HttpServlet {
             out= response.getWriter();
             new MysqlCon().grade(username,token, response);
         }
+        else if(method.equals("query"))
+        {
+            String username = request.getParameter("username");
+            out= response.getWriter();
+            new MysqlCon().query(username, response);
+        }
         else
         {
             String username = request.getParameter("username");

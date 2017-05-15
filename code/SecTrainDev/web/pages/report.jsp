@@ -26,7 +26,7 @@
         font-size: 200px
     }
 </style>
-<body onload = "generating()">
+<body onload = "Generating()">
 
 <!-- Navbar -->
 <div class="w3-top">
