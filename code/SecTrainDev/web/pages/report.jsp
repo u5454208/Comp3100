@@ -26,7 +26,7 @@
         font-size: 200px
     }
 </style>
-<body>
+<body onload = "generating()">
 
 <!-- Navbar -->
 <div class="w3-top">
@@ -62,15 +62,10 @@
     <div class="w3-content">
         <div class="w3-twothird">
             <h1>About us</h1>
-            <h5 class="w3-padding-32">
-                Username: <br>
-                            Yu Xia<br>
-                            Lin Zhou<br>
-                            Zongge Ren<br>
-                            Runze Liu<br>
-                            David Jorm (Client)<br>
-                Email: comp3100project@hotmail.com
-            </h5>
+            <h5 class="w3-padding-32" id="user"></h5>
+            <h5 class="w3-padding-32" id="grade"></h5>
+            <h5 class="w3-padding-32" id="challenges"></h5>
+            
         </div>
 
         <div class="w3-third w3-center">
@@ -80,24 +75,41 @@
 </div>
 <script language="JavaScript">
     function Generating() {
-        var xmlhttp;
-        if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
+		var username = getCookie('User');
+		document.getElementById("user").innerHTML="Username : " + username;
+		var xmlhttp;
+        	if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
             xmlhttp = new XMLHttpRequest();
         }
-        else {// code for IE6, IE5
+        	else {// code for IE6, IE5
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
-        var Selection = "webbank";
-        Selection = encodeURI(encodeURI(Selection));
-        xmlhttp.open("POST", "../Selection", true);
+        	
+        xmlhttp.open("POST", "../MysqlCon", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xmlhttp.send("selection=" + Selection + "&publicDNS="+ window.location.href.split("?")[1].split("=")[1]);
+        xmlhttp.send("method=query&username=" + username);
         xmlhttp.onreadystatechange = function () {
-            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                    window.open('http://'+xmlhttp.getResponseHeader('publicDNS')+':8080/webbank');
-            }
+                if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                     document.getElementById("grade").innerHTML="Grade : " + xmlhttp.getResponseHeader('grade');
+						document.getElementById("challenges").innerHTML="The challenges finished : " + xmlhttp.getResponseHeader('challenges');
+            }      
         }
     }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+
 </script>
 <script>
     // Used to toggle the menu on small screens when clicking on the menu button

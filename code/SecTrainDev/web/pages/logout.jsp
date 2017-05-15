@@ -63,7 +63,7 @@
             window.close();
         }
         else {
-            alert(ID);
+            //alert(ID);
             var name = "stop";
             name = encodeURI(encodeURI(name));
             xmlhttp.open("POST", "/../StopApp", true);
