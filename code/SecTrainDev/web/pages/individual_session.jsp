@@ -81,12 +81,26 @@
         Selection = encodeURI(encodeURI(Selection));
         xmlhttp.open("POST", "../Selection", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xmlhttp.send("selection=" + Selection + "&publicDNS="+ window.location.href.split("?")[1].split("=")[1]);
+        xmlhttp.send("selection=" + Selection + "&publicDNS="+ getCookie('publicDNS'));
         xmlhttp.onreadystatechange = function () {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
-                    window.open('http://'+xmlhttp.getResponseHeader('publicDNS')+':8080/webbank');
+                    window.open('http://'+getCookie('publicDNS')+':8080/webbank');
             }
         }
+    }
+function getCookie(cname) {
+        var name = cname + "=";
+        var ca = document.cookie.split(';');
+        for(var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
     }
 </script>
 <script>
