@@ -153,7 +153,7 @@
         </li>
         <li class="w3-hide-small"><a href="pages/token_submit.jsp" class="w3-padding-large w3-hover-white">Submit your
             token</a></li>
-        <li class="w3-hide-small w3-right"><a href="pages/logout.jsp" class="w3-padding-large w3-hover-white">Log out</a></li>
+        <li class="w3-hide-small w3-right"><a href="logout.jsp" class="w3-padding-large w3-hover-white">Log out</a></li>
     </ul>
 
     <!-- Navbar on small screens -->
@@ -161,7 +161,7 @@
         <ul class="w3-navbar w3-left-align w3-large w3-black">
             <li><a class="w3-padding-large" href="material.jsp">Learning Material</a></li>
             <li><a class="w3-padding-large" href="VMControl.jsp">Start Pen-testing</a></li>
-            <li><a class="w3-padding-large w3-right" href="pages/logout.jsp">Log out</a></li>
+            <li><a class="w3-padding-large w3-right" href="logout.jsp">Log out</a></li>
         </ul>
     </div>
 </div>
