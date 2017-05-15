@@ -76,6 +76,7 @@
                 }
             }
         }
+    }
         function Function2() {
             var xmlhttp;
             var ID = new Array();
@@ -135,7 +136,6 @@
             var expires = "expires="+d.toUTCString();
             document.cookie = cname + "=;" + expires + ";path=/";
         }
-    }
 </script>
 <body>
 
