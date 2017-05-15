@@ -77,8 +77,8 @@ public class Selection extends HttpServlet {
 
 	      ((ChannelExec)channel).setErrStream(System.err);
 	      channel.connect();
-	      /*Thread.sleep(60000);// time out function. It is used for set exploitation time for user
-	      command = "docker stop " + questionID; 
+	      Thread.sleep(5000);// time out function. It is used for set exploitation time for user
+	      /*command = "docker stop " + questionID; 
 		    	((ChannelExec)channel).setCommand(command);  
 		    	channel.connect();// stop container*/
 	      channel.disconnect();

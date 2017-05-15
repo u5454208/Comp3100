@@ -78,6 +78,7 @@
             xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
         var Selection = "webbank";
+		alert("start webbank now")
         Selection = encodeURI(encodeURI(Selection));
         xmlhttp.open("POST", "../Selection", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
