@@ -64,8 +64,8 @@
         }
         else {
             //alert(ID);
-            deleteCookie('ID');
-            deleteCookie('publicDNS');
+            var d = new Date();
+            d.setTime(Date.now());
             var name = "stop";
             name = encodeURI(encodeURI(name));
             xmlhttp.open("POST", "StopApp", true);
@@ -75,6 +75,14 @@
             xmlhttp.onreadystatechange = function () {
                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                     alert("Stop app successful!");
+                    deleteCookie('ID');
+                    deleteCookie('publicDNS');
+                    alert("Logout Successful!");
+                    window.open(window.location.href + "/../index.jsp");
+                    window.close();
+                } else if (d.setDate(d + 10000) == Date.now()){
+                    deleteCookie('ID');
+                    deleteCookie('publicDNS');
                     alert("Logout Successful!");
                     window.open(window.location.href + "/../index.jsp");
                     window.close();
