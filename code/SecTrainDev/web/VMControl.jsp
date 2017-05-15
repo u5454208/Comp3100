@@ -79,14 +79,14 @@
     }
         function Function2() {
             var xmlhttp;
-            var ID = new Array();
+            var ID = getCookie('ID');
             if (window.XMLHttpRequest) {// code for IE7+, Firefox, Chrome, Opera, Safari
                 xmlhttp = new XMLHttpRequest();
             }
             else {// code for IE6, IE5
                 xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
             }
-            if (getCookie('ID') == "") {
+            if (ID == "") {
                 alert("No machine running now!")
             }
             else {
