@@ -59,7 +59,7 @@
         }
         if (ID == "") {
             alert("Logout Successful!");
-            window.open(window.location.href + "/../../index.jsp");
+            window.open(window.location.href + "/../index.jsp");
             window.close();
         }
         else {
@@ -76,7 +76,7 @@
                     deleteCookie('ID');
                     deleteCookie('publicDNS');
                     alert("Logout Successful!");
-                    window.open(window.location.href + "/../../index.jsp");
+                    window.open(window.location.href + "/../index.jsp");
                     window.close();
                 }
             }
