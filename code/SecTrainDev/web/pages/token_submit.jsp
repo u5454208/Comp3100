@@ -81,7 +81,7 @@
         var username = getCookie('User');
         //alert(username);
         var token = document.getElementById("3").value;
-        xmlhttp.open("POST", "/MysqlCon", true);
+        xmlhttp.open("POST", "../MysqlCon", true);
         xmlhttp.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
         xmlhttp.send("method=grade&username="+ username +"&token=" + token);
         xmlhttp.onreadystatechange = function () {
