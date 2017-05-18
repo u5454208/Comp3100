@@ -6,10 +6,10 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="5d0e0d12-ec69-4f33-9a17-53f95e65c7e4" name="Default" comment="update the a series of jsp and .war">
+    <list default="true" readonly="true" id="5d0e0d12-ec69-4f33-9a17-53f95e65c7e4" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/SecTrainDev_war_exploded/SecTrainDev_war exploded.war" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/logout.jsp" afterPath="$PROJECT_DIR$/web/logout.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/home.jsp" afterPath="$PROJECT_DIR$/web/home.jsp" />
     </list>
     <ignored path="SecTrainDev.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -85,7 +85,7 @@
       <file leaf-file-name="VMControl.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/VMControl.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1622">
+            <state relative-caret-position="2325">
               <caret line="155" column="49" lean-forward="false" selection-start-line="155" selection-start-column="49" selection-end-line="155" selection-end-column="49" />
               <folding />
             </state>
@@ -95,8 +95,8 @@
       <file leaf-file-name="report.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/report.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="41" column="119" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="119" />
+            <state relative-caret-position="615">
+              <caret line="41" column="119" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="119" />
               <folding />
             </state>
           </provider>
@@ -112,44 +112,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MysqlCon.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MysqlCon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2265">
-              <caret line="168" column="46" lean-forward="false" selection-start-line="168" selection-start-column="46" selection-end-line="168" selection-end-column="46" />
-              <folding>
-                <element signature="n#!!doc" expanded="false" />
-                <element signature="imports" expanded="false" />
-                <marker date="1494817253000" expanded="true" signature="2753:2818" ph="SELECT usern... userinfo" />
-                <marker date="1494817253000" expanded="true" signature="2887:2954" ph="INSERT INTO userinfo... " />
-                <marker date="1494817253000" expanded="true" signature="2994:3047" ph="INSERT INTO usergrade... " />
-                <marker date="1494817253000" expanded="true" signature="4010:4075" ph="SELECT passw... userinfo" />
-                <marker date="1494817253000" expanded="true" signature="5302:5355" ph="SELECT score... token" />
-                <marker date="1494817253000" expanded="true" signature="5516:5533" ph="UPDATE userg... " />
-                <marker date="1494817253000" expanded="true" signature="5516:5573" ph="UPDATE userg... " />
-                <marker date="1494817253000" expanded="true" signature="5516:5584" ph="UPDATE userg... " />
-                <marker date="1494817253000" expanded="true" signature="5516:5585" ph="UPDATE userg... " />
-                <marker date="1494817253000" expanded="true" signature="5516:5586" ph="UPDATE userg... " />
-                <marker date="1494817253000" expanded="true" signature="5516:5588" ph="UPDATE userg... " />
-                <marker date="1494817253000" expanded="true" signature="5522:5533" ph="INSERT INTO usergrade... " />
-                <marker date="1494817253000" expanded="true" signature="6325:6388" ph="SELECT score... usergrade" />
-                <marker date="1494817253000" expanded="true" signature="6605:6672" ph="SELECT chall... challenge" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="account.challenge" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/a542a588/5fffcb1e-04bf-4b9e-b71d-e4fae32e61b1/account.challenge">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
           <provider editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -166,21 +139,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="logout.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="logout.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/logout.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="81" column="35" lean-forward="true" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+            <state relative-caret-position="1215">
+              <caret line="81" column="35" lean-forward="false" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="home.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/home.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="455">
-              <caret line="34" column="119" lean-forward="false" selection-start-line="34" selection-start-column="119" selection-end-line="34" selection-end-column="119" />
+            <state relative-caret-position="411">
+              <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -199,9 +172,22 @@
       <file leaf-file-name="token_submit.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/pages/token_submit.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="675">
-              <caret line="45" column="123" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="45" selection-end-column="123" />
+            <state relative-caret-position="154">
+              <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Selection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Selection.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="495">
+              <caret line="57" column="27" lean-forward="false" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <marker date="1494815704000" expanded="true" signature="3481:3613" ph="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -273,13 +259,13 @@
         <option value="dbtable:/a542a588/5fffcb1e-04bf-4b9e-b71d-e4fae32e61b1/account.chanllenge" />
         <option value="$PROJECT_DIR$/src/Selection.java" />
         <option value="$PROJECT_DIR$/web/pages/login.jsp" />
-        <option value="$PROJECT_DIR$/web/pages/token_submit.jsp" />
         <option value="$PROJECT_DIR$/web/pages/individual_session.jsp" />
         <option value="$PROJECT_DIR$/web/material.jsp" />
         <option value="$PROJECT_DIR$/web/VMControl.jsp" />
         <option value="$PROJECT_DIR$/web/pages/report.jsp" />
-        <option value="$PROJECT_DIR$/web/home.jsp" />
         <option value="$PROJECT_DIR$/web/logout.jsp" />
+        <option value="$PROJECT_DIR$/web/pages/token_submit.jsp" />
+        <option value="$PROJECT_DIR$/web/home.jsp" />
       </list>
     </option>
   </component>
@@ -300,7 +286,7 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="43" />
+    <option name="x" value="45" />
     <option name="y" value="22" />
     <option name="width" value="1395" />
     <option name="height" value="878" />
@@ -478,6 +464,10 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="SearchEverywhereHistoryKey" value="data&#9;ACTION&#9;ActivateDatabaseToolWindow" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="sectraindev" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -1259,7 +1249,10 @@
       <workItem from="1494763138463" duration="2596000" />
       <workItem from="1494766054660" duration="2536000" />
       <workItem from="1494815698509" duration="1920000" />
-      <workItem from="1494852107326" duration="1518000" />
+      <workItem from="1494852107326" duration="1833000" />
+      <workItem from="1494898059985" duration="9000" />
+      <workItem from="1495094960151" duration="382000" />
+      <workItem from="1495095935689" duration="48000" />
     </task>
     <task id="LOCAL-00001" summary="remove something">
       <created>1477034616691</created>
@@ -1583,11 +1576,18 @@
       <option name="project" value="LOCAL" />
       <updated>1494852386507</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="update the a series of jsp and .war">
+      <created>1494853916504</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1494853916504</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="144081000" />
+    <option name="totallyTimeSpent" value="144835000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1599,8 +1599,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="43" y="22" width="1395" height="878" extended-state="6" />
-    <editor active="true" />
+    <frame x="45" y="22" width="1395" height="878" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1622,9 +1621,9 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.49741316" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31170484" sideWeight="0.7191427" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32824427" sideWeight="0.4593796" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32824427" sideWeight="0.4593796" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32951653" sideWeight="0.49741316" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18773097" sideWeight="0.60692215" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19512194" sideWeight="0.60692215" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18038654" sideWeight="0.39307788" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1790,14 +1789,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/a542a588/5fffcb1e-04bf-4b9e-b71d-e4fae32e61b1/account.userinfo">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1833,14 +1832,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/a542a588/5fffcb1e-04bf-4b9e-b71d-e4fae32e61b1/account.usergrade">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1875,14 +1874,14 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/a542a588/5fffcb1e-04bf-4b9e-b71d-e4fae32e61b1/account.token">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1899,17 +1898,6 @@
         <state relative-caret-position="1290">
           <caret line="86" column="25" lean-forward="false" selection-start-line="86" selection-start-column="25" selection-end-line="86" selection-end-column="25" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Selection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="28" column="10" lean-forward="false" selection-start-line="28" selection-start-column="10" selection-end-line="28" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <marker date="1494815704000" expanded="true" signature="3481:3613" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1947,27 +1935,27 @@
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/a542a588/5fffcb1e-04bf-4b9e-b71d-e4fae32e61b1/account.chanllenge">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/a542a588/5fffcb1e-04bf-4b9e-b71d-e4fae32e61b1/account.challenge">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -1997,33 +1985,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/pages/token_submit.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="123" lean-forward="false" selection-start-line="40" selection-start-column="8" selection-end-line="45" selection-end-column="123" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/pages/report.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="41" column="119" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/home.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="455">
-          <caret line="34" column="119" lean-forward="false" selection-start-line="34" selection-start-column="119" selection-end-line="34" selection-end-column="119" />
+        <state relative-caret-position="615">
+          <caret line="41" column="119" lean-forward="false" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="119" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/VMControl.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1622">
+        <state relative-caret-position="2325">
           <caret line="155" column="49" lean-forward="false" selection-start-line="155" selection-start-column="49" selection-end-line="155" selection-end-column="49" />
           <folding />
         </state>
@@ -2031,8 +2003,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/logout.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="81" column="35" lean-forward="true" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+        <state relative-caret-position="1215">
+          <caret line="81" column="35" lean-forward="false" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Selection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="57" column="27" lean-forward="false" selection-start-line="57" selection-start-column="27" selection-end-line="57" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <marker date="1494815704000" expanded="true" signature="3481:3613" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/pages/token_submit.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="81" column="26" lean-forward="false" selection-start-line="81" selection-start-column="26" selection-end-line="81" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/home.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="411">
+          <caret line="36" column="9" lean-forward="true" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
           <folding />
         </state>
       </provider>
