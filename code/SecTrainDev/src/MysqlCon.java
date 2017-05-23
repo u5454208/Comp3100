@@ -137,15 +137,27 @@ public class MysqlCon extends HttpServlet {
             Statement stmt = con.createStatement();
             // do the query for grading
             ResultSet rs = stmt.executeQuery("SELECT score FROM token WHERE token = '" + token + "'");
+            int flag = 0;
+            ResultSet record;
             if (rs.next()) {
-                System.out.println("5");
-                response.addHeader("result", "5");
-                stmt.executeUpdate("UPDATE usergrade SET score = score + 5 WHERE username = '"+username+"'");
+                record = stmt.executeQuery("SELECT username FROM challenge WHERE token = '" + token + "'");
+                if (record.next())
+                {
+                        response.addHeader("result","exist");
+                }
+                else
+                {
+                        response.addHeader("result", "5");
+                        stmt.executeUpdate("UPDATE usergrade SET score = score + 5 WHERE username = '"+username+"'");
+                        record = stmt.executeQuery("SELECT challenge FROM token WHERE token = '" + token + "'");
+                        stmt.executeUpdate("insert into challenge values ('" + username + "','" + record.next() + "'");
+                }
             }else {
                 System.out.println("0");
                 response.addHeader("result", "0");
             }
             rs.close();
+            record.close();
         } catch (Exception e) {
             System.out.println(e);
         }
