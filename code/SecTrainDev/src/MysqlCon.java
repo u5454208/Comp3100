@@ -140,7 +140,10 @@ public class MysqlCon extends HttpServlet {
             int flag = 0;
             ResultSet record;
             if (rs.next()) {
-                record = stmt.executeQuery("SELECT username FROM challenge WHERE token = '" + token + "'");
+                record = stmt.executeQuery("SELECT * FROM challenge as cha, token as tok 
+                                           WHERE cha.challenge = tok.challenge 
+                                           and tok.token = '" + token + "'
+                                           and cha.username = '" + username + "'");
                 if (record.next())
                 {
                         response.addHeader("result","exist");
