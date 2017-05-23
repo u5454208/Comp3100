@@ -153,7 +153,7 @@ public class MysqlCon extends HttpServlet {
                         response.addHeader("result", "5");
                         stmt.executeUpdate("UPDATE usergrade SET score = score + 5 WHERE username = '"+username+"'");
                         record = stmt.executeQuery("SELECT challenge FROM token WHERE token = '" + token + "'");
-                        stmt.executeUpdate("insert into challenge values ('" + username + "','" + record.next() + "'");
+                        stmt.executeUpdate("insert into challenge values ('" + username + "','" + record.next() + "')");
                 }
             }else {
                 System.out.println("0");
