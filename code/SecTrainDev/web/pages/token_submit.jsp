@@ -89,6 +89,9 @@
                  if (xmlhttp.getResponseHeader('result')=="5"){
                            alert("Congratulation! You find the token in this application!");
                         }
+                        else if (xmlhttp.getResponseHeader('result')=="exist"){
+                           alert("You have already finished it!");
+                        }
                         else {
                             alert("Wrong token!");
                         }
