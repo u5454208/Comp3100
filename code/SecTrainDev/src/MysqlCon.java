@@ -138,12 +138,9 @@ public class MysqlCon extends HttpServlet {
             // do the query for grading
             ResultSet rs = stmt.executeQuery("SELECT score FROM token WHERE token = '" + token + "'");
             int flag = 0;
-            ResultSet record;
+            ResultSet record = null;
             if (rs.next()) {
-                record = stmt.executeQuery("SELECT * FROM challenge as cha, token as tok 
-                                           WHERE cha.challenge = tok.challenge 
-                                           and tok.token = '" + token + "'
-                                           and cha.username = '" + username + "'");
+                record = stmt.executeQuery("SELECT * FROM challenge as cha, token as tok WHERE cha.challenge = tok.challenge and tok.token = '" + token + "' and cha.username = '" + username + "'");
                 if (record.next())
                 {
                         response.addHeader("result","exist");
@@ -153,7 +150,8 @@ public class MysqlCon extends HttpServlet {
                         response.addHeader("result", "5");
                         stmt.executeUpdate("UPDATE usergrade SET score = score + 5 WHERE username = '"+username+"'");
                         record = stmt.executeQuery("SELECT challenge FROM token WHERE token = '" + token + "'");
-                        stmt.executeUpdate("insert into challenge values ('" + username + "','" + record.next() + "'");
+                        record.next();
+                        stmt.executeUpdate("insert into challenge values ('" + username + "','" + record.getString(1) + "')");
                 }
             }else {
                 System.out.println("0");
