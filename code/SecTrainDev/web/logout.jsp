@@ -80,7 +80,7 @@
                     alert("Logout Successful!");
                     window.open(window.location.href + "/../index.jsp");
                     window.close();
-                } else if (d.setDate(d + 10000) == Date.now()){
+                } else {
                     deleteCookie('ID');
                     deleteCookie('publicDNS');
                     alert("Logout Successful!");
