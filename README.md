@@ -97,4 +97,4 @@ Sec-Training
   1. upload the .war file to the main server
   2. put it into the tomcat server's directory: /webapps
 
-[Technologies in STD](https://github.com/u5454208/Comp3100/blob/master/document/Technologies%20in%20SecTrainDev.txt) 
+[Technologies in SecTrainDev](https://github.com/u5454208/Comp3100/blob/master/document/Technologies%20in%20SecTrainDev.txt) 
