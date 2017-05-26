@@ -96,3 +96,5 @@ To run on localhost:
 To run on the AWS:
   1. upload the .war file to the main server
   2. put it into the tomcat server's directory: /webapps
+
+[This link](https://github.com/u5454208/Comp3100/blob/master/document/Technologies%20in%20SecTrainDev.txt) Technologies in STD
