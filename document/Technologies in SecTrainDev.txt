@@ -35,6 +35,7 @@ Current issues and potential improvements can be considered about:
 5. adding authentication that the user can’t get to other pages before login
 6. Using script to create the database dynamically
 7. adding the score read from database rather than directly add 5
+8. considering about how to configure the docker service automatically
  
  
  
