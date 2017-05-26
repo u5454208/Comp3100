@@ -1,0 +1,35 @@
+Structure:
+1. front end: JSP
+2. back end: java (using servlet)
+Existing functions:
+1. signup and login
+2. running virtual machine
+3. timeout function for stop virtual machine
+4. running webbank
+5. 4 different tokens in the webbank
+6. get marks by submititng tokens
+7. producing the personal report, showing the total grades and finished challenges\
+How to modify the application and make extension:
+for the website:
+1. installing tomcat service
+2. modifying the code of the website
+3. ensuring all needed libraries are included (sometimes the libraries should also be put in the libs folder of tomcat)
+4. producing .war file and deploying by putting it in the webapps folder
+for new challenges in webbank or other application:
+1. creating the new instance in AWS EC2
+2. installing tomcat and Docker service
+3. creating new docker images and running one container for the new application (if it is based on the web, I suggest to copy official tomcat image and then modify it. And remembering to bind the port of container)
+4. After modifying the container, ensuring all the containers are stopped on the new instance.
+5. creating new AMI on AWS EC2 by using the instance you modified
+6. modifying the AMI ID in StartApp.java
+7. modifying the individual_session.jsp and Selection.java to ensure the new challenges can be deployed correctly. And Making sure that the path of keyfile is correct on the server.
+Current issues and potential improvements can be considered about:
+1. Reducing the initializing time for getting publicDNS of new virtual machine
+2. Fix the issue that webbank will work only after opening it 3 times (perhaps it related to initializing)
+3. Considering about the Concurrency of timeout function and try to move it to back-end code rather than the front end. And maybe adding a clock visible to the users will be a better experience for the users
+4. Finishing scoreboard function
+5. adding authentication that the user can’t get to other pages before login
+6. Using script to create the database dynamically
+ 
+ 
+ 
