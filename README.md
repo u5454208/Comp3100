@@ -8,7 +8,7 @@ Common Setup:
   3. Check the keyfile path in the code: Selection.java and path on server or local if the SSH connection needs the keyfile
 
 Database Setup:
-  Database: "account"
+```  Database: "account"
   +-------------------+  
   | Tables_in_account |
   +-------------------+
@@ -75,7 +75,7 @@ Database Setup:
   | dfj        | password    |
   | test       | test        |
   +------------+-------------+
-
+```
 Environment Setup for localhost:
   1. Install the IntelliJ
   2. Install the IDE for tomcat server in IntelliJ
