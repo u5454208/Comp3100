@@ -1,6 +1,7 @@
 Structure:
 1. front end: JSP
 2. back end: java (using servlet)
+3. database: Mysql
 
 Existing functions:
 1. signup and login
