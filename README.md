@@ -1,18 +1,20 @@
-# Comp3100
+# Comp3100 SecTrainDev
 Sec-Training
 (The purpose of this product)
+
+Comoon Setup:
+  1. Install Mysql and setup the databases: existing tables here:
+  2. Setup the AMI for the new virtual machine
+  3. Check the keyfile path in the code: Selection.java and path on server or local if the SSH connection needs the keyfile
 
 Environment Setup for localhost:
   1. Install the IntelliJ
   2. Install the IDE for tomcat server in IntelliJ
-  3. Install Mysql and setup the databases
+  
 
-Environment Setup for localhost:
+Environment Setup for server:
   1. Setup the main server on AWS
-  2. Install Mysql and setup the databases
-  3. Setup the AMI for webbank app
-  4. check the keyfile path in the code: Selection.java
-  5. Install the tomcat in the main server
+  2. Install the tomcat in the main server
   
 To build:
   1. Menu: File > Project Structure > Artifacts
@@ -25,4 +27,4 @@ To run on localhost:
   
 To run on the AWS:
   1. upload the .war file to the main server
-  2. put it into the tomcat server's directory
+  2. put it into the tomcat server's directory: /webapps
