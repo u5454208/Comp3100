@@ -2,7 +2,7 @@
 Sec-Training
 (The purpose of this product)
 
-Comoon Setup:
+Common Setup:
   1. Install Mysql and setup the databases: existing tables here:
   2. Setup the AMI for the new virtual machine
   3. Check the keyfile path in the code: Selection.java and path on server or local if the SSH connection needs the keyfile
